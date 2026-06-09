@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/backyardchords.com/static/css/main.eb9ddb7d.css",
-    "main.js": "/backyardchords.com/static/js/main.7a1a81f3.js",
-    "static/js/453.9f49335e.chunk.js": "/backyardchords.com/static/js/453.9f49335e.chunk.js",
-    "index.html": "/backyardchords.com/index.html",
-    "main.eb9ddb7d.css.map": "/backyardchords.com/static/css/main.eb9ddb7d.css.map",
-    "main.7a1a81f3.js.map": "/backyardchords.com/static/js/main.7a1a81f3.js.map",
-    "453.9f49335e.chunk.js.map": "/backyardchords.com/static/js/453.9f49335e.chunk.js.map"
+    "main.css": "/static/css/main.4a08fc51.css",
+    "main.js": "/static/js/main.76d629c2.js",
+    "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
+    "static/media/hero.jpeg": "/static/media/hero.687efc4770ec64d0a592.jpeg",
+    "index.html": "/index.html",
+    "main.4a08fc51.css.map": "/static/css/main.4a08fc51.css.map",
+    "main.76d629c2.js.map": "/static/js/main.76d629c2.js.map",
+    "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb9ddb7d.css",
-    "static/js/main.7a1a81f3.js"
+    "static/css/main.4a08fc51.css",
+    "static/js/main.76d629c2.js"
   ]
 }
