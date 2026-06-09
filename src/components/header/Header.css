@@ -1,0 +1,45 @@
+.header {
+  background: var(--color-dark);
+  border-bottom: 3px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 90px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 0.9;
+  cursor: pointer;
+}
+
+.logo-backyard {
+  color: var(--color-light);
+
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+.logo-chords {
+  color: var(--color-secondary);
+
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+}
