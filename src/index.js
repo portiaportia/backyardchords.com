@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Layout from './Layout';
+import Home from './pages/home/Home';
 
 const App = () => {
   return (
-    <h1>Hello</h1>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
