@@ -14,6 +14,7 @@
 }
 
 .navigation-list a {
+    font-family: var(--font-nav);
   color: var(--color-light);
 
   text-transform: uppercase;

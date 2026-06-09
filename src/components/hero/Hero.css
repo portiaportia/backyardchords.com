@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Permanent+Marker&display=swap');
+
+:root {
+  --font-hero: "Baloo 2", cursive;
+}
+
+.hero {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+
+.hero-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 1.2;
+  max-width: 12ch;
+  color: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.title-line {
+  display: inline-block;
+  transform: rotate(-3deg);
+}
+
+.title-line-1 {
+  font-size: 0.9em;
+}
+
+.title-line-2 {
+  font-size: 1.3em;
+}
+
+.title-line-3 {
+  font-size: 0.95em;
+}
+
+.hero-text {
+  margin: 1.25rem 0 0;
+  max-width: 34rem;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight:bolder;
+}
+
+
+.hero-visual {
+  position: relative;
+  min-height: 520px;
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(243, 239, 230, 0.95)),
+    var(--color-surface);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+@media (max-width: 980px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    min-height: 460px;
+    order: -1;
+  }
+}
+
+@media (max-width: 700px) {
+   .hero-visual {
+    min-height: 390px;
+  }
+}

@@ -1,6 +1,26 @@
 /* Backyard Chords - global site styles */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
 :root {
+  --font-display: "Permanent Marker", cursive;
+  --font-nav: "Kalam", cursive;
+  --font-body: "Nunito", sans-serif;
+
+  --color-bg: #f3efe6;
+  --color-surface: #ffffff;
+  --color-text: #121212;
+
+  --color-primary: #4f86ff;
+  --color-primary-soft: #7ea7ff;
+
+  --color-secondary: #a8d64e;
+  --color-secondary-soft: #bdeb5b;
+
+  --color-dark: #121212;
+  --color-light: #ffffff;
+
   /* Core palette */
   --color-bg: #f3efe6;
   --color-surface: #ffffff;
@@ -33,11 +53,6 @@
   --radius-pill: 999px;
   --site-max-width: 1200px;
 
-  /* Typography */
-  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Bangers", "Impact", "Arial Black", sans-serif;
-  --font-hand: "Caveat", "Bradley Hand", cursive;
-
   /* Motion */
   --transition-fast: 150ms ease;
   --transition-base: 220ms ease;
@@ -57,7 +72,7 @@ body {
   min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -247,6 +262,14 @@ label {
   transform: rotate(-1deg);
   border-radius: 999px;
   z-index: -1;
+
+h1,
+h2,
+h3,
+.hero-title,
+.section-title {
+  font-family: var(--font-display);
+}
 }
 
 /* Optional dark section */
