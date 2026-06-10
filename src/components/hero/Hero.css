@@ -68,8 +68,13 @@
 }
 
 .meet-btn {
-  position: relative;
-  display: inline-block;
+  display: inline-block; /* or block */
+  background-image:url("images/black-highlight.png");
+  margin-left:-5px;
+  margin-top:15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 0.95rem 1.4rem;
   color: var(--color-light);
   text-decoration: none;
@@ -77,46 +82,61 @@
   font-size: 1.15rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  z-index: 0;
 }
 
 .meet-btn-text {
-  position: relative;
-  z-index: 2;
-}
-
-.meet-btn::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  right: -12px;
-  bottom: 0.2rem;
-  height: 18px;
+  margin-right:15px;
 }
 
 .hero-visual {
   position: relative;
+  width:100%;
+}
+
+.hand-written-icon {
+  position:absolute;
 }
 
 #hand-written-star {
-  position:absolute;
   max-width:10%;
-  top:-15%;
-  right:0%;
+  top:0%;
+  left:20%;
 }
 
 #hand-written-bolt {
-  position:absolute;
-  max-width:7%;
-  top:3%;
-  right:15%;
+  max-width:10%;
+  top:-5%;
+  right:8%;
 }
 
 #hand-written-sign {
-  position:absolute;
   max-width:12%;
-  bottom:5%;
+  bottom:0%;
   right:-5%;
+}
+
+#hand-written-dashes {
+  max-width:100px;
+  bottom:50%;
+  left:-20%;
+}
+
+#hand-written-arrow {
+  max-width:100px;
+  bottom:0%;
+  left:-20%;
+}
+
+#hand-written-guitar {
+  max-width:100px;
+  bottom:0%;
+  right:15%;
+}
+
+#hand-written-lines-1 {
+  max-width:50px;
+  top:0%;
+  right:15%;
 }
 
 @media (max-width: 980px) {
@@ -131,6 +151,10 @@
 }
 
 @media (max-width: 700px) {
+  .hand-written-icon {
+    display:none;
+  }
+
    .hero-visual {
     min-height: 390px;
   }

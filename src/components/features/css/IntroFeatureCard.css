@@ -1,0 +1,140 @@
+.intro-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 320px;
+
+  padding-right: 1rem;
+}
+
+.intro-feature-title {
+  margin: 0;
+
+  color: white;
+
+  font-family: var(--font-display);
+
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
+
+  line-height: 1.05;
+
+  transform: rotate(-2deg);
+}
+
+.intro-feature-text {
+  margin-top: 1rem;
+
+  max-width: 20ch;
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  line-height: 1.5;
+}
+
+.intro-feature-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-feature-button {
+  margin-top: 1.5rem;
+
+  display: inline-block;
+
+  color: var(--color-secondary);
+
+  font-family: var(--font-nav);
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+#blue-line {
+  margin-left:-10%;
+  margin-top:5px;
+  width:95%;
+}
+
+.intro-feature-button {
+  position:relative;
+}
+
+#arrow-right {
+  position:absolute;
+  width:40px;
+  bottom:13%;
+  right:-10%;
+}
+
+.intro-feature-button {
+    margin-top: 1.1rem;
+    font-size: 1.5rem;
+    display: inline-block; /* or block */
+    background-image:url("../images/green-highlight.png");
+    margin-top:15px;
+    margin-left:0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.95rem 1.4rem;
+    color: var(--color-light);
+    text-decoration: none;
+    font-family: var(--font-nav);
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+@media (max-width: 700px) {
+  .intro-feature {
+    min-height: auto;
+    padding-right: 0;
+    padding-inline: 0.25rem;
+  }
+
+  .intro-feature-title {
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+    line-height: 1;
+    transform: rotate(-1deg);
+    text-align:center;
+  }
+
+  .intro-feature-text {
+    max-width: none;
+    font-size: 1.5rem;
+    line-height: 1.45;
+    margin-top: 0.85rem;
+  }
+
+  .intro-feature-button {
+    margin-top: 1.1rem;
+    font-size: 1.5rem;
+  }
+
+  #blue-line {
+    margin-left: -4%;
+    margin-top: 0.35rem;
+    width: 102%;
+  }
+
+  .intro-feature-title {
+    gap: 0.15rem;
+  }
+
+  @media (max-width: 700px) {
+  .intro-line-1 {
+    margin-left: -10rem;
+  }
+
+  .intro-line-2 {
+    margin-left: -1rem;
+  }
+
+  .intro-line-3 {
+    margin-left: 10rem;
+  }
+}
+}

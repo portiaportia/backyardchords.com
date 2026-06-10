@@ -1,0 +1,38 @@
+.feature-grid-section {
+  padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(4rem, 8vw, 6rem);
+  background: black;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 1.2fr)
+    repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 1100px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

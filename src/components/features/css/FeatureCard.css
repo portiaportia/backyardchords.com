@@ -1,0 +1,45 @@
+.feature-card {
+  position: relative;
+  min-height: 270px;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card-title {
+  margin: 0;
+  color: var(--color-dark);
+  font-family: var(--font-nav);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.feature-card-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card-image {
+  width: min(150px, 70%);
+  height: auto;
+  display: block;
+}
+
+.feature-card-blue {
+  background: var(--color-primary-soft);
+}
+
+.feature-card-paper {
+  background: var(--color-paper);
+}
+
+.feature-card-green {
+  background: var(--color-secondary);
+}
