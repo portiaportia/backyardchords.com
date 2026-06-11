@@ -8,6 +8,7 @@ export const Navigation = () => {
         <li><a href="#chords">Chords</a></li>
         <li><a href="#strums">Strums</a></li>
         <li><a href="#songs">Songs</a></li>
+        <li><a href="/fretboard">Fretboard</a></li>
         <li><a href="#about">About Us</a></li>
       </ul>
     </nav>
