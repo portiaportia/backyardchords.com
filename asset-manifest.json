@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfb4ece3.css",
-    "main.js": "/static/js/main.47fe051c.js",
+    "main.css": "/static/css/main.786392f6.css",
+    "main.js": "/static/js/main.615ac53d.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
     "static/media/background-hero.png": "/static/media/background-hero.020b0c8543f287254e8b.png",
+    "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
     "static/media/hero.png": "/static/media/hero.147141308439ebaf0f0c.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
     "static/media/songs.png": "/static/media/songs.dfdf30d9648f4e414222.png",
     "static/media/achord.png": "/static/media/achord.82ca3db854b5952ab6d4.png",
     "static/media/hand-sign.png": "/static/media/hand-sign.b43c615856ed450facc0.png",
-    "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
     "static/media/star.png": "/static/media/star.cc867022eccfd3f8a7ef.png",
     "static/media/blue-line.png": "/static/media/blue-line.f52f06adce5d5bc75b97.png",
     "static/media/arrow.png": "/static/media/arrow.f0486ea66e50cd7d435d.png",
@@ -21,12 +21,12 @@
     "static/media/dashes.png": "/static/media/dashes.4aa170437701b7e7e721.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.bfb4ece3.css.map": "/static/css/main.bfb4ece3.css.map",
-    "main.47fe051c.js.map": "/static/js/main.47fe051c.js.map",
+    "main.786392f6.css.map": "/static/css/main.786392f6.css.map",
+    "main.615ac53d.js.map": "/static/js/main.615ac53d.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb4ece3.css",
-    "static/js/main.47fe051c.js"
+    "static/css/main.786392f6.css",
+    "static/js/main.615ac53d.js"
   ]
 }
