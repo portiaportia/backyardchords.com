@@ -1,4 +1,5 @@
 import "./Navigation.css";
+import greenStroke from "./green-stroke.png";
 
 export const Navigation = () => {
   return (
@@ -8,8 +9,11 @@ export const Navigation = () => {
         <li><a href="#chords">Chords</a></li>
         <li><a href="#strums">Strums</a></li>
         <li><a href="#songs">Songs</a></li>
-        <li><a href="/fretboard">Fretboard</a></li>
         <li><a href="#about">About Us</a></li>
+        <li className="fretboard-link">
+          <a href="/fretboard" class="fretboard-highlight">Fretboard</a>
+          <img src={greenStroke}  alt="green stroke" className="green-stroke" />
+        </li>
       </ul>
     </nav>
   );

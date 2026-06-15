@@ -6,8 +6,10 @@ const Header = () => {
         <header className="header">
             <div className="container header-container">
                 <div className="logo">
-                <span className="logo-backyard">BACKYARD</span>
-                <span className="logo-chords">CHORDS</span>
+                <a href="/">
+                    <span className="logo-backyard">BACKYARD</span>
+                    <span className="logo-chords">CHORDS</span>
+                </a>
                 </div>
 
                 <Navigation />

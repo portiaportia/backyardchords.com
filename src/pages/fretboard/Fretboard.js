@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./css/Fretboard.css";
 import stringLetterBackground from "./images/string-letter-background.png";
 import stringLine from "./images/string.png";
@@ -18,6 +19,8 @@ const NOTE_NAMES = [
   "B",
 ];
 
+const WHOLE_NOTES = ["A", "B", "C", "D", "E", "F", "G"];
+
 const STRINGS = [
   { openNote: "E", label: "1st" },
   { openNote: "B", label: "2nd" },
@@ -36,6 +39,9 @@ const getNoteAtFret = (openNote, fret) => {
 };
 
 const Fretboard = () => {
+  const [selectedNote, setSelectedNote] = useState("");
+  const [showAllNotes, setShowAllNotes] = useState(true);
+
   return (
     <section
       className="fretboard-page"
@@ -53,20 +59,49 @@ const Fretboard = () => {
             Your guitar map.
           </h1>
           <p className="fretboard-text">
-            The fretboard is the road map of your guitar. Learn the notes. Find
-            the patterns. Play anywhere.
+            The fretboard is the road map of your guitar.
           </p>
         </div>
 
+        <div className="fretboard-leader-selector">
+            <div className="letter-selector-buttons">
+              <h3 className="letter-selector-title">
+                Show Notes
+              </h3>
+              <button className={`letter-chooser-note ${showAllNotes ? "active-blue" : ""}`} 
+              onClick={() => setShowAllNotes(!showAllNotes)}
+              >
+                All
+              </button>
+            { WHOLE_NOTES.map((note) => (
+              <button
+                key={note}
+                className={`letter-chooser-note ${selectedNote === note ? "active" : ""}`} 
+              onClick={() => setSelectedNote(selectedNote === note? "": note)}
+              >
+                {note}
+              </button>
+            ))}
+            </div>
+        </div>
+
         <div className="fretboard-board">
+         
           <div className="fretboard-header">
             <div className="fretboard-header-spacer" />
-            {FRETS.map((fret) => (
-              <div key={fret} className="fretboard-fret-number">
-                {fret}
-              </div>
-            ))}
+            <div className="fretboard-header-track" aria-hidden="true">
+              {FRETS.map((fret, index) => (
+                <div
+                  key={fret}
+                  className="fretboard-fret-number"
+                  style={{ "--fret-index": index }}
+                >
+                  {fret}
+                </div>
+              ))}
+            </div>
           </div>
+
 
           {STRINGS.map((stringRow) => (
             <div key={stringRow.label} className="fretboard-row">
@@ -97,7 +132,7 @@ const Fretboard = () => {
                     return (
                       <span
                         key={fret}
-                        className="fretboard-note"
+                        className={`fretboard-note ${selectedNote === note ? "active" : showAllNotes ? "": "hidden"}`}
                         style={{ "--fret-index": index }}
                       >
                         {note}

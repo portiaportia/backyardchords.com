@@ -215,6 +215,10 @@ a:hover {
   color: var(--color-text);
 }
 
+.hidden {
+  display:none !important;
+}
+
 /* Useful form defaults */
 input,
 textarea,
