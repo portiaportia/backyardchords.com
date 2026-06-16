@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 import greenStroke from "./green-stroke.png";
 
@@ -9,9 +10,9 @@ export const Navigation = () => {
         {/*<li><a href="#strums">Strums</a></li>*/}
         {/*<li><a href="#songs">Songs</a></li> */}
         <li><a href="#about">About Us</a></li>
-        <li><a href="/chords">Chords</a></li>
+        <li><Link to="/chords">Chords</Link></li>
         <li className="fretboard-link">
-          <a href="/fretboard" class="fretboard-highlight">Fretboard</a>
+          <Link to="/fretboard" class="fretboard-highlight">Fretboard</Link>
           <img src={greenStroke}  alt="green stroke" className="green-stroke" />
         </li>
       </ul>
