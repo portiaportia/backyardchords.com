@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.126c0ca5.css",
-    "main.js": "/static/js/main.1f88c91e.js",
+    "main.css": "/static/css/main.dbd2d9dc.css",
+    "main.js": "/static/js/main.c025cc44.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
-    "static/media/background-hero.png": "/static/media/background-hero.020b0c8543f287254e8b.png",
-    "static/media/hero.png": "/static/media/hero.147141308439ebaf0f0c.png",
+    "static/media/background-paper.png": "/static/media/background-paper.020b0c8543f287254e8b.png",
+    "static/media/guitar-bang.png": "/static/media/guitar-bang.64a285fddba706d2a551.png",
+    "static/media/hero.png": "/static/media/hero.13ef5490b59133025259.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
@@ -21,12 +22,12 @@
     "static/media/dashes.png": "/static/media/dashes.4aa170437701b7e7e721.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.126c0ca5.css.map": "/static/css/main.126c0ca5.css.map",
-    "main.1f88c91e.js.map": "/static/js/main.1f88c91e.js.map",
+    "main.dbd2d9dc.css.map": "/static/css/main.dbd2d9dc.css.map",
+    "main.c025cc44.js.map": "/static/js/main.c025cc44.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.126c0ca5.css",
-    "static/js/main.1f88c91e.js"
+    "static/css/main.dbd2d9dc.css",
+    "static/js/main.c025cc44.js"
   ]
 }
