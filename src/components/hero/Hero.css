@@ -7,7 +7,7 @@
 .hero {
   padding: clamp(4rem, 9vw, 7rem) 0;
   overflow: hidden;
-  background-image:url("./images/background-hero.png");
+  background-image:url("../../images/background-paper.png");
 }
 
 .hero-copy {
@@ -98,9 +98,9 @@
 }
 
 #hand-written-star {
-  max-width:10%;
-  top:0%;
-  left:20%;
+  max-width:8%;
+  top:-10%;
+  left:0%;
 }
 
 #hand-written-bolt {

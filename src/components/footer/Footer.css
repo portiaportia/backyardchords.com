@@ -1,0 +1,31 @@
+#footer {
+    overflow: hidden;
+    background-image:url("../../images/background-paper.png");
+}
+
+#footer-guitar-line {
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+}
+
+#footer-guitar {
+    max-width:120px;
+}
+
+#footer-guitar-line p {
+    font-family:var(--font-nav);
+    font-size:2em;
+    line-height:0.4em;
+    width:fit-content;
+}
+
+#footer .container {
+    position:relative;
+}
+
+#footer-copy {
+    position:absolute;
+    bottom:10%;
+    right:0;
+}

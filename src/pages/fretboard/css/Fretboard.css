@@ -1,9 +1,6 @@
 .fretboard-page {
   padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 5rem);
-  background:
-    radial-gradient(circle at top left, rgba(168, 214, 78, 0.08), transparent 24%),
-    radial-gradient(circle at bottom right, rgba(79, 134, 255, 0.08), transparent 26%),
-    var(--color-bg);
+  
 }
 
 .fretboard-copy {

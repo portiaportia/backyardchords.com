@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Layout from './Layout';
 import Home from './pages/home/Home';
 import Fretboard from "./pages/fretboard/Fretboard";
+import Chords from "./pages/chords/Chords";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="/fretboard" element={<Fretboard />}/>
+          <Route path ="/chords" element={<Chords />}/>
         </Route>
       </Routes>
     </BrowserRouter>

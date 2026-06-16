@@ -44,7 +44,7 @@ const Fretboard = () => {
 
   return (
     <section
-      className="fretboard-page"
+      className="fretboard-page page"
       aria-labelledby="fretboard-title"
       style={{
         "--string-bg": `url(${stringLetterBackground})`,

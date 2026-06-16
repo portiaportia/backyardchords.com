@@ -79,6 +79,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.page {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+  overflow: hidden;
+  background-image:url("./images/background-paper.png");
+}
+
 #root {
   min-height: 100vh;
 }
