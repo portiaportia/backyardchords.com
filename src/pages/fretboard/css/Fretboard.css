@@ -1,6 +1,5 @@
 .fretboard-page {
   padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 5rem);
-  
 }
 
 .fretboard-copy {
@@ -44,19 +43,6 @@
   line-height: 1.6;
 }
 
-.fretboard-board {
-  position: relative;
-  padding: 0.75rem 1em 0.5rem;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.03) 0 1px, transparent 1.5px),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)),
-    var(--color-paper);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-}
-
 .fretboard-leader-selector {
   position: relative;
   padding: 0.75rem 1em 0.5rem;
@@ -68,12 +54,71 @@
     var(--color-paper);
   box-shadow: var(--shadow-md);
   overflow: hidden;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .letter-selector-title {
-  font-family:var(--font-nav);
-  margin:5px;
+  margin: 5px;
+  font-family: var(--font-nav);
+}
+
+.letter-selector-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.letter-chooser-note {
+  flex-grow: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.45rem;
+  min-height: 2.45rem;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+}
+
+.letter-selector-buttons .active {
+  background-color: var(--color-secondary);
+}
+
+.letter-selector-buttons .active-blue {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.fretboard-board-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.75rem;
+  margin-top: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+
+.fretboard-board {
+  width: max-content;
+  min-width: 980px;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0.75rem 1em 0.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.03) 0 1px, transparent 1.5px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)),
+    var(--color-paper);
+  box-shadow: var(--shadow-md);
 }
 
 .fretboard-header,
@@ -217,54 +262,36 @@
 }
 
 .fretboard-note.active {
-  background-color:var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
-.letter-selector-buttons {
-  display:flex;
-  align-items:start;
-  gap:20px;
-}
-
-.letter-selector-buttons .active {
-  background-color:var(--color-secondary);
-}
-
-.letter-selector-buttons .active-blue {
-  background-color:var(--color-primary);
-  color:white;
-}
-
-.letter-chooser-note {
-  flex-grow:0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.45rem;
-  min-height: 2.45rem;
-  border: 2px solid var(--color-border);
-  border-radius: 50%;
-  background: var(--color-light);
-  color: var(--color-dark);
-  font-family: var(--font-nav);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  box-shadow: var(--shadow-sm);
-  
+.fretboard-note.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 700px) {
-  .fretboard-board {
-    min-width: 920px;
-  }
-
   .fretboard-header,
   .fretboard-row {
-    grid-template-columns: 83px minmax(0, 1fr);
+    grid-template-columns: 72px minmax(0, 1fr);
   }
 
   .fretboard-string-name {
-    font-size: 0.82rem;
+    font-size: 0.72rem;
+    width: 42px;
+  }
+
+  .fretboard-string-badge {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .letter-selector-buttons {
+    gap: 0.75rem;
+  }
+
+  .fretboard-board {
+    min-width: 1100px;
   }
 }
