@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8934d55.css",
-    "main.js": "/static/js/main.113726e3.js",
+    "main.css": "/static/css/main.992e953b.css",
+    "main.js": "/static/js/main.ea922cf5.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
     "static/media/background-paper.png": "/static/media/background-paper.020b0c8543f287254e8b.png",
     "static/media/guitar-bang.png": "/static/media/guitar-bang.64a285fddba706d2a551.png",
     "static/media/hero.png": "/static/media/hero.13ef5490b59133025259.png",
+    "static/media/maverick.png": "/static/media/maverick.7da0344cbc96b07217f7.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
+    "static/media/scarlet.png": "/static/media/scarlet.6d2213c33b947e76305e.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
     "static/media/songs.png": "/static/media/songs.dfdf30d9648f4e414222.png",
@@ -22,12 +24,12 @@
     "static/media/dashes.png": "/static/media/dashes.4aa170437701b7e7e721.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.a8934d55.css.map": "/static/css/main.a8934d55.css.map",
-    "main.113726e3.js.map": "/static/js/main.113726e3.js.map",
+    "main.992e953b.css.map": "/static/css/main.992e953b.css.map",
+    "main.ea922cf5.js.map": "/static/js/main.ea922cf5.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8934d55.css",
-    "static/js/main.113726e3.js"
+    "static/css/main.992e953b.css",
+    "static/js/main.ea922cf5.js"
   ]
 }
