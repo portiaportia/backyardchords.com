@@ -83,6 +83,7 @@ body {
   padding: clamp(4rem, 9vw, 7rem) 0;
   overflow: hidden;
   background-image:url("./images/background-paper.png");
+  margin-top:-20px;
 }
 
 #root {

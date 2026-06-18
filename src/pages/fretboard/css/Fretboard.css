@@ -1,5 +1,6 @@
 .fretboard-page {
   padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 5rem);
+  margin-bottom:-20px;
 }
 
 .fretboard-copy {
@@ -43,9 +44,7 @@
   line-height: 1.6;
 }
 
-.fretboard-leader-selector {
-  position: relative;
-  padding: 0.75rem 1em 0.5rem;
+.fretboard-board-shell {
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
   background:
@@ -54,46 +53,8 @@
     var(--color-paper);
   box-shadow: var(--shadow-md);
   overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.letter-selector-title {
-  margin: 5px;
-  font-family: var(--font-nav);
-}
-
-.letter-selector-buttons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.letter-chooser-note {
-  flex-grow: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.45rem;
-  min-height: 2.45rem;
-  border: 2px solid var(--color-border);
-  border-radius: 50%;
-  background: var(--color-light);
-  color: var(--color-dark);
-  font-family: var(--font-nav);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  box-shadow: var(--shadow-sm);
-}
-
-.letter-selector-buttons .active {
-  background-color: var(--color-secondary);
-}
-
-.letter-selector-buttons .active-blue {
-  background-color: var(--color-primary);
-  color: white;
+  padding-left:0.5rem;
+  padding-right:1.5rem;
 }
 
 .fretboard-board-scroll {
@@ -107,9 +68,13 @@
 }
 
 .fretboard-board {
-  width: max-content;
-  min-width: 980px;
-  flex-shrink: 0;
+  min-width:980px;
+  position: relative;
+  flex-shrink:0;
+  
+}
+
+.fretboard-leader-selector {
   position: relative;
   padding: 0.75rem 1em 0.5rem;
   border: 2px solid var(--color-border);
@@ -119,6 +84,13 @@
     linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)),
     var(--color-paper);
   box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom:20px;
+}
+
+.letter-selector-title {
+  font-family:var(--font-nav);
+  margin:5px;
 }
 
 .fretboard-header,
@@ -128,16 +100,11 @@
 }
 
 .fretboard-header {
-  margin-bottom: 0.35rem;
-}
-
-.fretboard-header-spacer {
-  min-height: 2.2rem;
 }
 
 .fretboard-header-track {
   position: relative;
-  min-height: 2.2rem;
+  min-height: 1.4rem;
 }
 
 .fretboard-fret-number {
@@ -158,7 +125,7 @@
 }
 
 .fretboard-row {
-  min-height: 4.8rem;
+  min-height: 3.8rem;
 }
 
 .fretboard-string-label {
@@ -186,6 +153,14 @@
   text-transform: uppercase;
 }
 
+.fretboard-row:nth-child(2) .fretboard-string-badge {
+ border-radius:0px .5rem 0px 0px;
+}
+
+.fretboard-row:last-child .fretboard-string-badge {
+ border-radius:0px 0rem 0.5rem 0px;
+}
+
 .fretboard-string-name {
   width: 50px;
   color: var(--color-primary);
@@ -198,7 +173,6 @@
 
 .fretboard-track {
   position: relative;
-  min-height: 4.8rem;
   overflow: hidden;
 }
 
@@ -233,10 +207,23 @@
   background-size: 100% 100%;
 }
 
+.fretboard-board > .fretboard-row:nth-child(2) .fretboard-fret-line {
+  top:2rem;
+}
+
+.fretboard-board > .fretboard-row:last-child .fretboard-fret-line {
+  bottom:2rem;
+}
+
 .fretboard-note-layer {
   position: absolute;
   inset: 0;
   z-index: 3;
+}
+
+.fretboard-string-label {
+  position:relative;
+  left:0rem;
 }
 
 .fretboard-note {
@@ -262,18 +249,56 @@
 }
 
 .fretboard-note.active {
-  background-color: var(--color-secondary);
+  background-color:var(--color-secondary);
 }
 
-.fretboard-note.hidden {
-  opacity: 0;
-  pointer-events: none;
+.letter-selector-buttons {
+  display:flex;
+  align-items:start;
+  gap:20px;
+}
+
+.letter-selector-buttons .active {
+  background-color:var(--color-secondary);
+}
+
+.letter-selector-buttons .active-blue {
+  background-color:var(--color-primary);
+  color:white;
+}
+
+.letter-chooser-note {
+  flex-grow:0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.45rem;
+  min-height: 2.45rem;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+  
 }
 
 @media (max-width: 700px) {
   .fretboard-header,
   .fretboard-row {
     grid-template-columns: 72px minmax(0, 1fr);
+  }
+
+  .fretboard-row {
+    max-height:2.5rem;
+    min-height: 2.5rem;
+  }
+
+  .fretboard-board > .fretboard-row:nth-child(2) {
+    margin-top:-20px;
   }
 
   .fretboard-string-name {
@@ -287,11 +312,45 @@
     font-size: 0.9rem;
   }
 
+  .fretboard-note {
+    min-width: 2rem;
+    min-height: 2rem;
+    font-size: 0.85rem;
+  }
+
   .letter-selector-buttons {
+    flex-wrap: wrap;
     gap: 0.75rem;
   }
 
-  .fretboard-board {
-    min-width: 1100px;
-  }
+  .fretboard-board > .fretboard-row:nth-child(2) .fretboard-fret-line {
+  top:1.2rem;
+}
+
+.fretboard-board > .fretboard-row:last-child .fretboard-fret-line {
+  bottom:1.2rem;
+}
+
+.letter-selector-buttons {
+  gap:5px;
+}
+
+.letter-chooser-note {
+  flex-grow:0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+  
+}
 }

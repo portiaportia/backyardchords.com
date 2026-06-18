@@ -64,98 +64,87 @@ const Fretboard = () => {
         </div>
 
         <div className="fretboard-leader-selector">
-          <div className="letter-selector-buttons">
-            <h3 className="letter-selector-title">Show Notes</h3>
-
-            <button
-              className={`letter-chooser-note ${
-                showAllNotes ? "active-blue" : ""
-              }`}
-              onClick={() => {
-                setShowAllNotes(true);
-                setSelectedNote("");
-              }}
-            >
-              All
-            </button>
-
-            {WHOLE_NOTES.map((note) => (
+            <div className="letter-selector-buttons">
+              <h3 className="letter-selector-title">
+                Show Notes
+              </h3>
+              <button className={`letter-chooser-note ${showAllNotes ? "active-blue" : ""}`} 
+              onClick={() => setShowAllNotes(!showAllNotes)}
+              >
+                All
+              </button>
+            { WHOLE_NOTES.map((note) => (
               <button
                 key={note}
-                className={`letter-chooser-note ${
-                  selectedNote === note ? "active" : ""
-                }`}
-                onClick={() => {
-                  setShowAllNotes(false);
-                  setSelectedNote((current) => (current === note ? "" : note));
-                }}
+                className={`letter-chooser-note ${selectedNote === note ? "active" : ""}`} 
+              onClick={() => setSelectedNote(selectedNote === note? "": note)}
               >
                 {note}
               </button>
             ))}
-          </div>
+            </div>
         </div>
 
-        <div className="fretboard-board-scroll">
-          <div className="fretboard-board">
-            <div className="fretboard-header">
-              <div className="fretboard-header-spacer" />
-              <div className="fretboard-header-track" aria-hidden="true">
-                {FRETS.map((fret, index) => (
-                  <div
-                    key={fret}
-                    className="fretboard-fret-number"
-                    style={{ "--fret-index": index }}
-                  >
-                    {fret}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {STRINGS.map((stringRow) => (
-              <div key={stringRow.label} className="fretboard-row">
-                <div className="fretboard-string-label">
-                  <span className="fretboard-string-name">{stringRow.label}</span>
-                  <span className="fretboard-string-badge">
-                    {stringRow.openNote}
-                  </span>
+        <div className="fretboard-board-shell">
+          <div className="fretboard-board-scroll">
+            <div className="fretboard-board">
+              <div className="fretboard-header">
+                <div className="fretboard-header-spacer" />
+                <div className="fretboard-header-track" aria-hidden="true">
+                  {FRETS.map((fret, index) => (
+                    <div
+                      key={fret}
+                      className="fretboard-fret-number"
+                      style={{ "--fret-index": index }}
+                    >
+                      {fret}
+                    </div>
+                  ))}
                 </div>
+              </div>
 
-                <div className="fretboard-track">
-                  <div className="fretboard-string-overlay" aria-hidden="true" />
 
-                  <div className="fretboard-fret-overlay" aria-hidden="true">
-                    {FRET_LINES.map((line) => (
-                      <span
-                        key={line}
-                        className="fretboard-fret-line"
-                        style={{ "--fret-index": line }}
-                      />
-                    ))}
+              {STRINGS.map((stringRow) => (
+                <div key={stringRow.label} className="fretboard-row">
+                  <div className="fretboard-string-label">
+                    <span className="fretboard-string-name">{stringRow.label}</span>
+                    <span className="fretboard-string-badge">
+                      {stringRow.openNote}
+                    </span>
                   </div>
 
-                  <div className="fretboard-note-layer">
-                    {FRETS.map((fret, index) => {
-                      const note = getNoteAtFret(stringRow.openNote, fret);
-                      const visible = showAllNotes || selectedNote === note;
+                  <div className="fretboard-track">
+                    <div className="fretboard-string-overlay" aria-hidden="true" />
 
-                      return (
+                    <div className="fretboard-fret-overlay" aria-hidden="true">
+                      {FRET_LINES.map((line) => (
                         <span
-                          key={fret}
-                          className={`fretboard-note ${
-                            selectedNote === note ? "active" : ""
-                          } ${visible ? "" : "hidden"}`}
-                          style={{ "--fret-index": index }}
-                        >
-                          {note}
-                        </span>
-                      );
-                    })}
+                          key={line}
+                          className="fretboard-fret-line"
+                          style={{ "--fret-index": line }}
+                        />
+                      ))}
+                    </div>
+
+                    <div className="fretboard-note-layer">
+                      {FRETS.map((fret, index) => {
+                        const note = getNoteAtFret(stringRow.openNote, fret);
+
+                        return (
+                          <span
+                            key={fret}
+                            className={`fretboard-note ${selectedNote === note ? "active" : showAllNotes ? "": "hidden"}`}
+                            style={{ "--fret-index": index }}
+                          >
+                            {note}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

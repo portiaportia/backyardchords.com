@@ -8,6 +8,7 @@
   padding: clamp(4rem, 9vw, 7rem) 0;
   overflow: hidden;
   background-image:url("../../images/background-paper.png");
+  margin-top:-20px;
 }
 
 .hero-copy {
@@ -188,5 +189,11 @@
 
   title-line {
     transform: rotate(-1deg);
+  }
+
+  
+
+  .meet-btn-text {
+    font-size:0.8em;
   }
 }

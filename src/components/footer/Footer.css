@@ -1,6 +1,14 @@
 #footer {
-    overflow: hidden;
-    background-image:url("../../images/background-paper.png");
+  overflow: hidden;
+  color:white;
+  background: url("./images/footer-background.png");
+  position: sticky;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top:20px;
+  padding-bottom:20px;
+  z-index:1;
 }
 
 #footer-guitar-line {
@@ -16,8 +24,8 @@
 #footer-guitar-line p {
     font-family:var(--font-nav);
     font-size:2em;
-    line-height:0.4em;
     width:fit-content;
+    margin:0;
 }
 
 #footer .container {

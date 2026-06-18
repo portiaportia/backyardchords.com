@@ -1,9 +1,12 @@
 .header {
-  background: var(--color-dark);
-  border-bottom: 3px solid var(--color-border);
+  background: url("../../images/header-background.png");
   position: sticky;
   top: 0;
   z-index: 1000;
+   background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom:20px;
 }
 
 .header-container {
