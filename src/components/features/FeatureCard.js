@@ -1,4 +1,5 @@
 import "./css/FeatureCard.css";
+import { HashLink } from 'react-router-hash-link';
 
 const FeatureCard = ({
   variant,
@@ -7,7 +8,7 @@ const FeatureCard = ({
   link
 }) => {
   return (
-    <a href={link} className={`feature-card feature-card-${variant}`}>
+    <HashLink smooth to={link} className={`feature-card feature-card-${variant}`}>
       <h3 className="feature-card-title">
         {title}
       </h3>
@@ -20,7 +21,7 @@ const FeatureCard = ({
           aria-hidden="true"
         />
       </div>
-    </a>
+    </HashLink>
   );
 };
 

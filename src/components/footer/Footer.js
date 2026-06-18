@@ -11,7 +11,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <p>Keep Practicing.</p>
-                        <p>You've got this!</p>
+                        <p id="footer-optional">You've got this!</p>
                     </div>
                 </div>
                 <p id="footer-copy">&copy; 2026 Backyard Chords.</p>

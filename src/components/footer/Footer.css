@@ -42,4 +42,12 @@
   #footer-copy {
     bottom:0%;
   }
+
+  #footer-optional {
+    display:none;
+  }
+
+  #footer-guitar-line p {
+    padding-left:20px;
+  }
 }

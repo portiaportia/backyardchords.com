@@ -146,7 +146,7 @@
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: 320px;
     order: -1;
   }
 }
@@ -157,7 +157,7 @@
   }
 
    .hero-visual {
-    min-height: 390px;
+    min-height: 240px;
   }
 
   .hero-copy {
