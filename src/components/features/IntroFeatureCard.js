@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/IntroFeatureCard.css";
 import BlueLine from "./images/blue-line.png";
 import ArrowRight from "./images/arrow-white.png";
@@ -26,7 +27,7 @@ const IntroFeatureCard = () => {
       </p>
 
       <a href="#lessons" className="intro-feature-button">
-        <span id="intro-features-button-text">Browse Lessons</span>
+        <span id="intro-features-button-text"><Link to="/lessons">Browse Lessons</Link></span>
         <img src={ArrowRight} id="arrow-right" alt="Right Arrow" />
       </a> 
     </div>

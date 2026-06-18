@@ -57,7 +57,7 @@ const ABOUT_PLAYERS = [
 
 const AboutUs = () => {
   return (
-    <section className="about-us-page page" aria-labelledby="about-us-title">
+    <section id="about" className="about-us-page page" aria-labelledby="about-us-title">
       <div className="container about-us-container">
         <div className="about-us-intro">
           <h1 id="about-us-title" className="about-us-title">

@@ -1,18 +1,18 @@
-import "./Chords.css";
+import "./Songs.css";
 
-const Chords = () => {
+const Songs = () => {
     return (
         <section
-            className="chords-page page">
+            className="songs-page page">
             <div className="container">
                 <div className="page-copy">
-                <span className="page-kicker">Chords</span>
+                <span className="page-kicker">Songs</span>
                 <h1 className="page-title">
-                    Chords<br />
+                    Songs<br />
                     Coming Soon
                 </h1>
                 <p className="fretboard-text">
-                    Let's start with the campfire chords
+                    New songs!
                 </p>
                 </div>
             </div>
@@ -20,4 +20,4 @@ const Chords = () => {
     );
 };
 
-export default Chords;
+export default Songs;

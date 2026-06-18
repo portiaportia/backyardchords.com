@@ -53,9 +53,9 @@ const Fretboard = () => {
       }}
     >
       <div className="container">
-        <div className="fretboard-copy">
-          <span className="fretboard-kicker">Fretboard</span>
-          <h1 id="fretboard-title" className="fretboard-title">
+        <div className="page-copy">
+          <span className="page-kicker">Fretboard</span>
+          <h1 id="fretboard-title" className="page-title">
             Your guitar map.
           </h1>
           <p className="fretboard-text">

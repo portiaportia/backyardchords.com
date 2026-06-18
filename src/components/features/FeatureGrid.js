@@ -20,28 +20,28 @@ const FeatureGrid = () => {
             variant="blue"
             title="Chords"
             image={chords}
-            link="#chords"
+            link="/chords"
           />
 
           <FeatureCard
             variant="paper"
             title="Strums"
             image={strums}
-            link="#strums"
+            link="/strums"
           />
 
           <FeatureCard
             variant="green"
             title="Songs"
             image={songs}
-            link="#songs"
+            link="/songs"
           />
 
           <FeatureCard
             variant="blue"
-            title="Tips & Tricks"
+            title="Fretboard"
             image={tips}
-            link="#tips"
+            link="/fretboard"
           />
         </div>
       </div>

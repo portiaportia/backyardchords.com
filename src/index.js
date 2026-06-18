@@ -7,6 +7,9 @@ import Layout from './Layout';
 import Home from './pages/home/Home';
 import Fretboard from "./pages/fretboard/Fretboard";
 import Chords from "./pages/chords/Chords";
+import Lessons from "./pages/lessons/Lessons";
+import Strums from "./pages/strums/Strums";
+import Songs from "./pages/songs/Songs";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
           <Route index element={<Home />}/>
           <Route path="/fretboard" element={<Fretboard />}/>
           <Route path ="/chords" element={<Chords />}/>
+          <Route path = "/lessons" element={<Lessons />}/>
+          <Route path = "/strums" element={<Strums />}/>
+          <Route path = "/songs" element={<Songs />}/>
         </Route>
       </Routes>
     </BrowserRouter>
