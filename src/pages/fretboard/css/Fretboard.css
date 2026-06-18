@@ -260,9 +260,10 @@
     max-height:2.5rem;
     min-height: 2.5rem;
   }
+  
 
   .fretboard-board > .fretboard-row:nth-child(2) {
-    margin-top:-20px;
+    margin-top:5px;
   }
 
   .fretboard-string-name {
