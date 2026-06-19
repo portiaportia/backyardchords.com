@@ -107,7 +107,7 @@
 .collection-card h3 {
   margin: 0;
   font-family: var(--font-nav);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -120,16 +120,7 @@
 
 .collection-card__icon {
   flex: none;
-  width: 2.25rem;
-  height: 2.25rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--color-border);
-  border-radius: 50%;
-  background: var(--color-surface);
-  font-size: 1rem;
-  box-shadow: var(--shadow-sm);
+  width: 5em;
 }
 
 .collection-card__link {
