@@ -4,6 +4,16 @@ import Chord from "../../components/chord/Chord";
 import campfirekids from "./images/campfire-kids.png";
 
 const Chords = () => {
+
+    const colors = {
+        yellow: "#F8EFBF",
+        green: "#E7F0D9",
+        purple: "#EFE7F8",
+        peach: "#FCE7DD",
+        blue: "#E8F2FF",
+        mint: "#DFF5EE",
+    };
+
     return (
         <section className="chords-page page">
             <div className="container">
@@ -38,36 +48,43 @@ const Chords = () => {
                         <Chord
                             title="C"
                             frets={[-1,3,2,0,1,0]}
+                            background={colors.yellow}
                         />
                         
                         <Chord
                             title="G"
                             frets={[3,2,0,0,0,3]}
+                            background={colors.green}
                         />
 
                         <Chord
                             title="D"
                             frets={[-1,-1,0,2,3,2]}
+                            background={colors.purple}
                         />
 
                         <Chord
                             title="A"
-                            frets={[-1,0,1,1,1,0]}
+                            frets={[-1,0,2,2,2,0]}
+                            background={colors.peach}
                         />
 
                         <Chord
                             title="A Minor"
                             frets={[-1,0,2,2,1,0]}
+                            background={colors.blue}
                         />
 
                         <Chord
                             title="E"
                             frets={[0,2,2,1,0,0]}
+                            background={colors.mint}
                         />
 
                         <Chord
                             title="E Minor"
                             frets={[0,2,2,0,0,0]}
+                            background={colors.yellow}
                         />
                     </div>
                 </section>

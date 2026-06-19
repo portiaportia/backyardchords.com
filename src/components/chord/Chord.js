@@ -12,6 +12,7 @@ const Chord = ({
   title = "CHORDS",
   showOpenMarkers = true,
   showMutedMarkers = true,
+  background
 }) => {
   const strings = React.useMemo(() => {
     return new Array(stringCount).fill(0).map((_, i) => frets[i] ?? -1);
@@ -105,7 +106,9 @@ const Chord = ({
 
   return (
     <div className="chord">
-      <div className="chord-card">
+      <div className="chord-card" style={{
+        background: background || "#7fa4ff",
+      }}>
         <div className="chord-title">{title}</div>
 
         <div className="chord-open-row">{renderOpenMarkers()}</div>
@@ -120,20 +123,3 @@ const Chord = ({
 };
 
 export default Chord;
-
-/*
-Example usage:
-
-<Chord
-  title="CHORDS"
-  frets={[3, 2, 0, 0, 0, 3]}
-  startFret={1}
-/>
-
-<Chord
-  title="F"
-  frets={[1, 3, 3, 2, 1, 1]}
-  startFret={1}
-  barres={[{ fret: 1, fromString: 0, toString: 5 }]}
-/>
-*/
