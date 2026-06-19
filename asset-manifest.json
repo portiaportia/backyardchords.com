@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0ea2d6f.css",
-    "main.js": "/static/js/main.c1384836.js",
+    "main.css": "/static/css/main.242fb659.css",
+    "main.js": "/static/js/main.6720242f.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
     "static/media/background-paper.png": "/static/media/background-paper.68494e8a79f49b56beaa.png",
+    "static/media/guitar-white.png": "/static/media/guitar-white.be94bbd4165e380ced31.png",
+    "static/media/campfire-kids.png": "/static/media/campfire-kids.db2b497b9e08acf2b7bb.png",
     "static/media/hero.png": "/static/media/hero.13ef5490b59133025259.png",
     "static/media/maverick.png": "/static/media/maverick.7da0344cbc96b07217f7.png",
-    "static/media/guitar-white.png": "/static/media/guitar-white.fe7f1162816d88bd492f.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
     "static/media/scarlet.png": "/static/media/scarlet.6d2213c33b947e76305e.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
@@ -26,12 +27,12 @@
     "static/media/header-background.png": "/static/media/header-background.7552e69b9a117da072a3.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.c0ea2d6f.css.map": "/static/css/main.c0ea2d6f.css.map",
-    "main.c1384836.js.map": "/static/js/main.c1384836.js.map",
+    "main.242fb659.css.map": "/static/css/main.242fb659.css.map",
+    "main.6720242f.js.map": "/static/js/main.6720242f.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0ea2d6f.css",
-    "static/js/main.c1384836.js"
+    "static/css/main.242fb659.css",
+    "static/js/main.6720242f.js"
   ]
 }
