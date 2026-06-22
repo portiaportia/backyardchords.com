@@ -87,6 +87,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+  justify-content: center;
 }
 
 .collection-card {
@@ -200,6 +201,12 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+  justify-items: center;
+}
+
+.chord-board-grid > * {
+  width: 100%;
+  max-width: 238px;
 }
 
 .next-section-placeholder {
@@ -230,6 +237,11 @@
   .collection-grid,
   .chord-board-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .chord-board-grid > * {
+    width: min(100%, 238px);
   }
 
   .hero-visual__card {
