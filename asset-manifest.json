@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.5703105a.css",
-    "main.js": "/static/js/main.6b1e016d.js",
+    "main.js": "/static/js/main.319d82ae.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
+    "static/media/hero.png": "/static/media/hero.aa380dc899d8a797472f.png",
     "static/media/background-paper.png": "/static/media/background-paper.68494e8a79f49b56beaa.png",
     "static/media/guitar-white.png": "/static/media/guitar-white.be94bbd4165e380ced31.png",
-    "static/media/campfire-kids.png": "/static/media/campfire-kids.db2b497b9e08acf2b7bb.png",
+    "static/media/campfire-kids.png": "/static/media/campfire-kids.d183f2d0649732160120.png",
+    "static/media/maverick.png": "/static/media/maverick.6b52b64a58f3a1eff139.png",
     "static/media/fire.png": "/static/media/fire.4376a183e297ae5dc2f9.png",
-    "static/media/hero.png": "/static/media/hero.13ef5490b59133025259.png",
-    "static/media/maverick.png": "/static/media/maverick.7da0344cbc96b07217f7.png",
+    "static/media/scarlet.png": "/static/media/scarlet.76c383267078bfbb33c4.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
-    "static/media/scarlet.png": "/static/media/scarlet.6d2213c33b947e76305e.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
     "static/media/songs.png": "/static/media/songs.dfdf30d9648f4e414222.png",
@@ -29,11 +29,11 @@
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
     "main.5703105a.css.map": "/static/css/main.5703105a.css.map",
-    "main.6b1e016d.js.map": "/static/js/main.6b1e016d.js.map",
+    "main.319d82ae.js.map": "/static/js/main.319d82ae.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5703105a.css",
-    "static/js/main.6b1e016d.js"
+    "static/js/main.319d82ae.js"
   ]
 }
