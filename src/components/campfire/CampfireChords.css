@@ -90,7 +90,11 @@
     }
 
     .campfire-chords-button {
-        justify-self: center;
+        position:static;
+    }
+
+    .campfire-chords-banner {
+        margin-top:0px;
     }
 }
 
