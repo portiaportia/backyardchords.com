@@ -1,0 +1,118 @@
+.campfire-chords-banner {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    margin-top:-6rem;
+
+    background: linear-gradient(180deg, #f8f2df, #f4edda);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    position:relative;
+}
+
+.campfire-chords-banner img {
+    width: 100%;
+    max-width: 110px;
+}
+
+.campfire-chords-copy h3 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-nav);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.campfire-chords-copy p {
+    margin: 0;
+    max-width: 40rem;
+    color: var(--color-text-muted);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.campfire-chords-button {
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-secondary);
+    font-family: var(--font-nav);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position:absolute;
+    bottom:1rem;
+    right:1rem;
+}
+
+.campfire-chords-button:hover {
+    transform: translateY(-2px);
+    background: var(--color-secondary-soft);
+    box-shadow: var(--shadow-md);
+}
+
+.campfire-chords-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .campfire-chords-banner {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .campfire-chords-banner img {
+        max-width: 90px;
+        margin: 0 auto;
+    }
+
+    .campfire-chords-copy h3,
+    .campfire-chords-copy p {
+        text-align: center;
+    }
+
+    .campfire-chords-copy p {
+        max-width: 32rem;
+        margin: 0 auto;
+    }
+
+    .campfire-chords-button {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .campfire-chords-banner {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    .campfire-chords-copy h3 {
+        font-size: clamp(1.5rem, 7vw, 2rem);
+    }
+
+    .campfire-chords-copy p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .campfire-chords-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+    }
+}

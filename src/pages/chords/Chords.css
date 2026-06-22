@@ -83,6 +83,10 @@
   background: var(--color-primary);
 }
 
+#chords-hero {
+  z-index:1;
+}
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -204,9 +208,17 @@
   justify-items: center;
 }
 
+.chord-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
 .chord-board-grid > * {
   width: 100%;
   max-width: 238px;
+  justify-self: start;
 }
 
 .next-section-placeholder {
@@ -215,6 +227,30 @@
 
 .next-section-placeholder .btn {
   margin-top: 1rem;
+}
+
+.chord-list .section-title {
+  font-family:var(--font-nav);
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.chord-list .sub-text {
+  font-size:1.5rem;
+  margin-top:0;
+  padding:0;
+}
+
+.all-chords-header,
+.chords-header,
+.chord-list {
+  width: 100%;
+}
+
+.all-chords-header,
+.chord-list > .section-title,
+.chord-list > .fretboard-text {
+  margin-left: 0;
 }
 
 @media (max-width: 1100px) {
@@ -241,7 +277,8 @@
   }
 
   .chord-board-grid > * {
-    width: min(100%, 238px);
+    max-width: 238px;
+    margin-inline: auto;
   }
 
   .hero-visual__card {

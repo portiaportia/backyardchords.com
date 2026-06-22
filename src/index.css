@@ -310,6 +310,7 @@ label {
   transform: rotate(-1deg);
   border-radius: 999px;
   z-index: -1;
+}
 
 h1,
 h2,
@@ -317,7 +318,6 @@ h3,
 .hero-title,
 .section-title {
   font-family: var(--font-display);
-}
 }
 
 /* Optional dark section */
