@@ -11,9 +11,7 @@ const Lessons = () => {
                     Lessons<br />
                     Coming Soon
                 </h1>
-                <p className="fretboard-text">
-                    Let's meet our guitars
-                </p>
+                
                 </div>
             </div>
         </section>

@@ -90,8 +90,15 @@
 }
 
 .hero-visual {
-  position: relative;
-  width:100%;
+  background:url("images/blue-green-background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 25%;
+}
+
+#kids-hero-image {
+  max-width:100%;
 }
 
 .hand-written-icon {
