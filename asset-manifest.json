@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.91feae37.css",
-    "main.js": "/static/js/main.71b3525e.js",
+    "main.css": "/static/css/main.0e0379c4.css",
+    "main.js": "/static/js/main.19c2c95a.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
-    "static/media/hero.png": "/static/media/hero.aa380dc899d8a797472f.png",
     "static/media/blue-green-background.png": "/static/media/blue-green-background.fad498d6f76c1367dc61.png",
-    "static/media/background-paper.png": "/static/media/background-paper.68494e8a79f49b56beaa.png",
     "static/media/guitar-white.png": "/static/media/guitar-white.be94bbd4165e380ced31.png",
-    "static/media/campfire-kids.png": "/static/media/campfire-kids.d183f2d0649732160120.png",
-    "static/media/maverick.png": "/static/media/maverick.6b52b64a58f3a1eff139.png",
+    "static/media/campfire-background.png": "/static/media/campfire-background.2123ba6802d3100dd8be.png",
+    "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
+    "static/media/maverick.png": "/static/media/maverick.3a31636872aa7724e08d.png",
     "static/media/fire.png": "/static/media/fire.4376a183e297ae5dc2f9.png",
-    "static/media/scarlet.png": "/static/media/scarlet.76c383267078bfbb33c4.png",
+    "static/media/scarlet.png": "/static/media/scarlet.fd6918e7a760cc7ddfbc.png",
+    "static/media/hero-kids-900.png": "/static/media/hero-kids-900.567b086a791db6e855b7.png",
+    "static/media/campfire-kids.png": "/static/media/campfire-kids.d3e435cbd167c0882078.png",
+    "static/media/background-paper.png": "/static/media/background-paper.145c99b3d6a7ad605f88.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.8a8e551e9b6d1a05d083.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.cc4984fb80a7ddf27ef6.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
     "static/media/songs.png": "/static/media/songs.dfdf30d9648f4e414222.png",
     "static/media/achord.png": "/static/media/achord.82ca3db854b5952ab6d4.png",
     "static/media/hand-sign.png": "/static/media/hand-sign.b43c615856ed450facc0.png",
+    "static/media/hero-kids-500.png": "/static/media/hero-kids-500.a7ac283c65bb0250e0fe.png",
     "static/media/star.png": "/static/media/star.cc867022eccfd3f8a7ef.png",
     "static/media/blue-line.png": "/static/media/blue-line.f52f06adce5d5bc75b97.png",
     "static/media/arrow.png": "/static/media/arrow.f0486ea66e50cd7d435d.png",
@@ -29,12 +32,12 @@
     "static/media/header-background.png": "/static/media/header-background.7552e69b9a117da072a3.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.91feae37.css.map": "/static/css/main.91feae37.css.map",
-    "main.71b3525e.js.map": "/static/js/main.71b3525e.js.map",
+    "main.0e0379c4.css.map": "/static/css/main.0e0379c4.css.map",
+    "main.19c2c95a.js.map": "/static/js/main.19c2c95a.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91feae37.css",
-    "static/js/main.71b3525e.js"
+    "static/css/main.0e0379c4.css",
+    "static/js/main.19c2c95a.js"
   ]
 }
