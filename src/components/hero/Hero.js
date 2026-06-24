@@ -1,5 +1,7 @@
 import "./Hero.css";
-import kids from "./images/hero.png";
+import kids500 from "./images/hero-kids-500.png";
+import kids900 from "./images/hero-kids-900.png";
+import kids1400 from "./images/hero-kids-1400.png";
 import green_stroke from "./images/green-stroke.png";
 import star from "./images/star.png";
 import lightening from "./images/lightening-bolt.png";
@@ -8,6 +10,7 @@ import dashes from "./images/dashes.png";
 import arrow from "./images/arrow.png";
 import guitar from "./images/guitar.png";
 import lines1 from "./images/lines1.png";
+import heroBgShape from "./images/blue-green-background.png";
 
 const Hero = () => {
   return (
@@ -49,7 +52,23 @@ const Hero = () => {
         <div className="hero-visual" aria-hidden="true">
             <img id="hand-written-star" class="hand-written-icon" src={star} alt="Handwritten Star" />
             <img id="hand-written-lines-1" class="hand-written-icon" src={lines1} alt="Handwritten Lines" />
-            <img id="kids-hero-image" src={kids} alt="kids holding guitars" />
+            <img className="hero-bg-shape" src={heroBgShape} alt="" />
+            <picture>
+              <source
+                media="(max-width: 700px)"
+                srcSet={kids500}
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcSet={kids900}
+              />
+              <img
+                id="kids-hero-image"
+                src={kids1400}
+                alt="kids holding guitars"
+                loading="eager"
+              />
+            </picture>
         </div>
       </div>
     </section>

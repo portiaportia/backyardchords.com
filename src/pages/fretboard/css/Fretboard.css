@@ -62,10 +62,6 @@
   display: grid;
   grid-template-columns: 82px minmax(0, 1fr);
 }
-
-.fretboard-header {
-}
-
 .fretboard-header-track {
   position: relative;
   min-height: 1.4rem;

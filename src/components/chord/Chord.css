@@ -24,22 +24,21 @@
 }
 
 .chord-open-row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: end;
-  margin: 0 auto 0.2rem;
-  width: 74%;
+  position: relative;
+  width: 58%;
   height: 22px;
+  margin: 0 auto 0.2rem;
 }
 
 .chord-open-marker {
-  justify-self: center;
+  position: absolute;
+  top: 0;
   color: #111;
   font-family: var(--font-nav);
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
-  transform: translateY(1px);
+  transform: translateX(-50%);
 }
 
 .chord-open-marker-muted {

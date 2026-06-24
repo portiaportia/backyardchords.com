@@ -8,18 +8,75 @@
 
 .chords-header {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(420px, 1.05fr);
   align-items: center;
-  gap: 2rem;
-  width:100%;
-  margin-bottom: 1.75rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: 100%;
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.page-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 32rem;
+  top:-20%;
+}
+
+.fretboard-text {
+  max-width: 28rem;
+  margin: 0;
+}
+
+.page-title {
+  margin: 0 0 0.75rem;
+  max-width: 12ch;
 }
 
 .chords-header img {
-  max-width: 800px;
+  max-width: none;
   width: 100%;
   height: auto;
 }
+
+#chords-hero {
+  position: relative;
+  width: 100%;
+  max-width:100%;
+  aspect-ratio: 684 / 409;
+  margin-left: auto;
+  isolation: isolate;
+  margin-bottom:50%;
+}
+
+/* background sketch */
+#chords-hero .hero-bg-shape {
+  position: absolute;
+  inset: 0;
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  object-position: center center;
+  transform: none; /* remove bleed */
+  z-index: 0;
+  pointer-events: none;
+  overflow:visible;
+  transform: translate(-30%, 10%);
+}
+
+/* kids image on top */
+#chords-hero > img:not(.hero-bg-shape) {
+  position: absolute;
+  z-index: 1;
+  bottom:-55%;
+  left:-30%;
+  transform: rotate(5deg);
+}
+
+#chords-hero img {
+  max-width: none;
+}
+
 
 .hero-content--chords {
   display: grid;
@@ -68,7 +125,7 @@
   font-size: clamp(1.7rem, 4vw, 2.75rem);
   line-height: 1.1;
   text-transform: uppercase;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .section-copy {
@@ -81,10 +138,6 @@
 
 .page-kicker--blue {
   background: var(--color-primary);
-}
-
-#chords-hero {
-  z-index:1;
 }
 
 .collection-grid {
@@ -205,14 +258,8 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
-  justify-items: center;
-}
-
-.chord-board-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
   align-items: start;
+  justify-items: center;
 }
 
 .chord-board-grid > * {
@@ -230,15 +277,15 @@
 }
 
 .chord-list .section-title {
-  font-family:var(--font-nav);
-  margin-bottom:0;
-  padding-bottom:0;
+  font-family: var(--font-nav);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .chord-list .sub-text {
-  font-size:1.5rem;
-  margin-top:0;
-  padding:0;
+  font-size: 1.5rem;
+  margin-top: 0;
+  padding: 0;
 }
 
 .all-chords-header,
@@ -257,6 +304,22 @@
   .collection-grid,
   .chord-board-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chords-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #chords-hero {
+    max-width: 100%;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  #chords-hero .hero-bg-shape {
+    transform: translate(0%, 0%) scale(1);
   }
 
   .hero-content--chords {
@@ -292,10 +355,4 @@
   .section-copy {
     font-size: 1rem;
   }
-
-   .chords-header {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        text-align: center;
-    }
 }

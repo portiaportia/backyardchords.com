@@ -4,6 +4,7 @@ import CampfireChords from "../../components/campfire/CampfireChords";
 import Chord from "../../components/chord/Chord";
 import AllChords from "../../components/allchords/AllChords";
 import campfirekids from "./images/campfire-kids.png";
+import campfireBgShape from "./images/campfire-background.png";
 
 const colors = {
     yellow: "#F8EFBF",
@@ -129,6 +130,7 @@ const Chords = () => {
                     </div>
 
                     <div id="chords-hero">
+                        <img className="hero-bg-shape" src={campfireBgShape} alt="" />
                         <img src={campfirekids} alt="Kids Playing Guitar at Campfire" />
                     </div>
                 </div>

@@ -21,26 +21,36 @@ const Chord = ({
   const visibleFrets = new Array(fretCount).fill(0).map((_, i) => startFret + i);
 
   const renderOpenMarkers = () => {
-    return strings.map((state, stringIndex) => {
-      if (state === 0 && showOpenMarkers) {
-        return (
-          <div key={`open-${stringIndex}`} className="chord-open-marker">
-            o
-          </div>
-        );
-      }
+  return strings.map((state, stringIndex) => {
+    const left = `${((stringIndex + 0.5) / stringCount) * 100}%`;
 
-      if (state < 0 && showMutedMarkers) {
-        return (
-          <div key={`muted-${stringIndex}`} className="chord-open-marker chord-open-marker-muted">
-            x
-          </div>
-        );
-      }
+    if (state === 0 && showOpenMarkers) {
+      return (
+        <div
+          key={`open-${stringIndex}`}
+          className="chord-open-marker"
+          style={{ left }}
+        >
+          o
+        </div>
+      );
+    }
 
-      return <div key={`blank-${stringIndex}`} className="chord-open-blank" />;
-    });
-  };
+    if (state < 0 && showMutedMarkers) {
+      return (
+        <div
+          key={`muted-${stringIndex}`}
+          className="chord-open-marker chord-open-marker-muted"
+          style={{ left }}
+        >
+          x
+        </div>
+      );
+    }
+
+    return null;
+  });
+};
 
   const renderStringLines = () => {
     return new Array(stringCount).fill(0).map((_, i) => (

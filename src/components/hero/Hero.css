@@ -8,6 +8,7 @@
   padding: clamp(4rem, 9vw, 7rem) 0;
   overflow: hidden;
   background-image:url("../../images/background-paper.png");
+  background-repeat: repeat;
   margin-top:-20px;
 }
 
@@ -90,15 +91,25 @@
 }
 
 .hero-visual {
-  background:url("images/blue-green-background.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 25%;
+  position: relative;
+}
+
+.hero-bg-shape {
+  position: absolute;
+  width: 180%;
+  max-width:180%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 #kids-hero-image {
-  max-width:100%;
+  position: relative;
+  width: 130%;
+  max-width:130%;
+  z-index: 1;
+  transform: translateX(-15%);
 }
 
 .hand-written-icon {
@@ -107,8 +118,8 @@
 
 #hand-written-star {
   max-width:8%;
-  top:-10%;
-  left:0%;
+  top:0%;
+  right:60%;
 }
 
 #hand-written-bolt {
@@ -139,33 +150,86 @@
   max-width:100px;
   bottom:0%;
   right:15%;
+  display:none;
 }
 
 #hand-written-lines-1 {
   max-width:50px;
-  top:0%;
-  right:15%;
+  top:10%;
+  right:-10%;
 }
+
+  .hand-written-icon {
+    z-index:2;
+  }
 
 @media (max-width: 980px) {
   .hero-content {
     grid-template-columns: 1fr;
   }
 
+  .hero-copy {
+    transform: translateX(15%);
+    margin:auto;
+  }
+
+  #hand-written-bolt {
+    max-width:8%;
+    top:-5%;
+    right:30%;
+  }
+
+  #hand-written-dashes {
+    max-width:100px;
+    bottom:50%;
+    left:-25%;
+  }
+
+  #hand-written-arrow {
+    bottom:0%;
+    left:-25%;
+  }
+
+  #hand-written-lines-1 {
+  max-width:50px;
+  top:10%;
+  right:5%;
+}
+
   .hero-visual {
     min-height: 320px;
     order: -1;
   }
+
+  .hero-visual {
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-bg-shape {
+    position: absolute;
+    width: 120%;
+    max-width:120%;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+}
+
+  #kids-hero-image {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    display: block;
+    object-fit: contain;
+  }
+
 }
 
 @media (max-width: 700px) {
-  .hand-written-icon {
-    display:none;
-  }
-
-   .hero-visual {
-    min-height: 240px;
-  }
 
   .hero-copy {
     width: 100%;
@@ -197,8 +261,6 @@
   title-line {
     transform: rotate(-1deg);
   }
-
-  
 
   .meet-btn-text {
     font-size:0.8em;

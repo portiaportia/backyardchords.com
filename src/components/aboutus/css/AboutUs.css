@@ -1,6 +1,5 @@
 .about-us-page {
   padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 5rem);
-  background-image:url("../../../images/background-paper.png");
   margin-bottom:-20px;
 }
 
