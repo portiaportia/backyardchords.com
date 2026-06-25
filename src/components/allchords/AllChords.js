@@ -1,5 +1,5 @@
 import React from "react";
-import "./AllChords.css";
+import "./AllChords.css"
 
 const LETTERS = ["A", "B", "C", "D", "E", "F", "G"];
 

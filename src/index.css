@@ -252,6 +252,8 @@ a:hover {
   text-transform: uppercase;
   box-shadow: var(--shadow-sm);
   transform: rotate(-2deg);
+  z-index:4;
+  position:relative;
 }
 
 .page-title {

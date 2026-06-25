@@ -2,25 +2,25 @@
   padding-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-.chords-hero {
-  padding-top: clamp(1.5rem, 4vw, 3rem);
-}
+/* ---------- HERO ---------- */
 
-.chords-header {
+.chords-hero {
   display: grid;
-  grid-template-columns: minmax(320px, 0.95fr) minmax(420px, 1.05fr);
-  align-items: center;
+  grid-template-columns: minmax(360px, 0.85fr) minmax(420px, 1.15fr);
+  align-items: start;
   gap: clamp(1.5rem, 4vw, 3rem);
   width: 100%;
-  margin-bottom: clamp(2rem, 4vw, 4rem);
-  padding-bottom: clamp(1rem, 2vw, 2rem);
+  padding-top: clamp(1rem, 3vw, 2.5rem);
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
 }
 
-.page-copy {
-  position: relative;
-  z-index: 2;
-  max-width: 32rem;
-  top:-20%;
+.chords-hero__copy {
+  max-width: 34rem;
+}
+
+.page-title {
+  margin: 0.4rem 0 0.75rem;
+  max-width: 12ch;
 }
 
 .fretboard-text {
@@ -28,194 +28,59 @@
   margin: 0;
 }
 
-.page-title {
-  margin: 0 0 0.75rem;
-  max-width: 12ch;
+.chords-hero__feature {
+  margin-top: clamp(1.25rem, 3vw, 2rem);
 }
 
-.chords-header img {
-  max-width: none;
-  width: 100%;
-  height: auto;
+.chords-hero__feature .campfire-chords {
+  margin: 0;
 }
 
+/* illustration area */
 #chords-hero {
   position: relative;
   width: 100%;
-  max-width:100%;
-  aspect-ratio: 684 / 409;
-  margin-left: auto;
+  min-height: 560px;
   isolation: isolate;
-  margin-bottom:50%;
 }
 
-/* background sketch */
 #chords-hero .hero-bg-shape {
   position: absolute;
-  inset: 0;
-  width: 150%;
-  height: 150%;
+  width: 120%;
+  height: 120%;
   object-fit: cover;
-  object-position: center center;
-  transform: none; /* remove bleed */
   z-index: 0;
   pointer-events: none;
   overflow:visible;
-  transform: translate(-30%, 10%);
 }
 
-/* kids image on top */
 #chords-hero > img:not(.hero-bg-shape) {
   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
   z-index: 1;
-  bottom:-55%;
-  left:-30%;
-  transform: rotate(5deg);
+  pointer-events: none;
 }
 
 #chords-hero img {
   max-width: none;
 }
 
+/* ---------- DIVIDER ---------- */
 
-.hero-content--chords {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 4rem);
-}
-
-.hero-visual--chords {
-  position: relative;
+.chords-divider {
   width: 100%;
-  min-height: 320px;
+  height: 2px;
+  margin: clamp(1.5rem, 4vw, 3rem) 0;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 999px;
+  opacity: 0.55;
 }
 
-.hero-visual__card {
-  position: relative;
-  min-height: 320px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.hero-visual__sketch {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  line-height: 1;
-  transform: rotate(-6deg);
-  max-width: 8rem;
-}
-
-.section-heading {
-  max-width: 42rem;
-  margin-bottom: 1.5rem;
-}
-
-.section-heading--compact {
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  margin: 0.25rem 0 0;
-  font-family: var(--font-display);
-  font-size: clamp(1.7rem, 4vw, 2.75rem);
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.section-copy {
-  margin: 0.75rem 0 0;
-  max-width: 44rem;
-  color: var(--color-text-muted);
-  font-size: clamp(1rem, 1.8vw, 1.1rem);
-  line-height: 1.7;
-}
-
-.page-kicker--blue {
-  background: var(--color-primary);
-}
-
-.collection-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  justify-content: center;
-}
-
-.collection-card {
-  padding: 1.25rem 1.15rem 1.15rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  min-height: 220px;
-}
-
-.collection-card__top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.collection-card h3 {
-  margin: 0;
-  font-family: var(--font-nav);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.collection-card p {
-  margin: 0;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-.collection-card__icon {
-  flex: none;
-  width: 5em;
-}
-
-.collection-card__link {
-  margin-top: auto;
-  display: inline-flex;
-  width: fit-content;
-  padding: 0.65rem 1rem;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background: var(--color-secondary);
-  color: var(--color-dark);
-  font-family: var(--font-nav);
-  font-weight: 700;
-  text-transform: uppercase;
-  box-shadow: var(--shadow-sm);
-}
-
-.collection-card__link:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.collection-card--warm {
-  background: linear-gradient(180deg, #fff5e7, #ffffff);
-}
-
-.collection-card--cool {
-  background: linear-gradient(180deg, #eef5ff, #ffffff);
-}
-
-.collection-card--soft {
-  background: linear-gradient(180deg, #eff8df, #ffffff);
-}
-
-.collection-card--lavender {
-  background: linear-gradient(180deg, #f4eeff, #ffffff);
-}
+/* ---------- FILTER ROW ---------- */
 
 .chord-button-row {
   display: flex;
@@ -243,37 +108,35 @@
   background: var(--color-secondary-soft);
 }
 
-.chord-board-shell {
-  padding: 1rem;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.03) 0 1px, transparent 1.5px),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.35)),
-    var(--color-paper);
-  box-shadow: var(--shadow-md);
+/* ---------- FEATURE CARD ---------- */
+
+.campfire-chords {
+  position: relative;
+  margin-top: 0;
 }
 
-.chord-board-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  align-items: start;
-  justify-items: center;
+.campfire-chords > * {
+  position: relative;
+  z-index: 1;
 }
 
-.chord-board-grid > * {
-  width: 100%;
-  max-width: 238px;
-  justify-self: start;
+.campfire-chords .section-title {
+  padding-top: 1rem;
+  margin-bottom: 0.4rem;
 }
 
-.next-section-placeholder {
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+.campfire-chords .sub-text {
+  max-width: 52rem;
+  margin: 0 0 1.25rem;
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
-.next-section-placeholder .btn {
-  margin-top: 1rem;
+/* ---------- CHORD GRID ---------- */
+
+.chord-list {
+  margin-top: 0;
 }
 
 .chord-list .section-title {
@@ -283,56 +146,142 @@
 }
 
 .chord-list .sub-text {
-  font-size: 1.5rem;
-  margin-top: 0;
+  font-size: 1.15rem;
+  margin-top: 0.25rem;
   padding: 0;
 }
 
+.chord-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+#campfire-kids-image {
+  transform: translate(-4%, 0%) rotate(5deg) scale(0.85);
+}
+
+.fireplace {
+  z-index:2 !important;
+  transform: translate(0%, 20%) scale(0.85);
+}
+
+.chord-board-grid > * {
+  width: 100%;
+  max-width: 238px;
+}
+
+.all-chords-section {
+  margin-top:-10%;
+  padding-bottom:2%;
+  z-index:-5 !important;
+}
+
+/* ---------- GENERAL ---------- */
+
+.page-kicker--blue {
+  background: var(--color-primary);
+}
+
+.section-title {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 4vw, 2.75rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.section-copy {
+  margin: 0.75rem 0 0;
+  max-width: 44rem;
+  color: var(--color-text-muted);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  line-height: 1.7;
+}
+
 .all-chords-header,
-.chords-header,
+.chords-hero,
 .chord-list {
   width: 100%;
+  margin-bottom:1%;
 }
 
-.all-chords-header,
-.chord-list > .section-title,
-.chord-list > .fretboard-text {
-  margin-left: 0;
+/* ---------- LEGACY CLASSES KEPT SAFE ---------- */
+
+.hero-content--chords,
+.hero-visual--chords,
+.hero-visual__card,
+.hero-visual__sketch,
+.collection-grid,
+.collection-card,
+.collection-card__top,
+.collection-card__icon,
+.collection-card__link,
+.collection-card--warm,
+.collection-card--cool,
+.collection-card--soft,
+.collection-card--lavender,
+.next-section-placeholder {
+  /* intentionally left here so older components don't break */
 }
+
+/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 1100px) {
+  .chords-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .chords-hero__copy {
+    max-width: 42rem;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .page-title,
+  .fretboard-text {
+    margin-inline: auto;
+    z-index:4;
+    position:relative;
+  }
+
+  #chords-hero {
+    order: -1;
+    min-height: 420px;
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
   .collection-grid,
   .chord-board-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .chords-header {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  #chords-hero {
-    max-width: 100%;
-    margin: 0 auto;
-    order: -1;
-  }
-
-  #chords-hero .hero-bg-shape {
-    transform: translate(0%, 0%) scale(1);
-  }
-
-  .hero-content--chords {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-visual--chords {
-    min-height: 260px;
-    order: -1;
+  .campfire-chords-banner {
+    margin-bottom:10%;
   }
 }
 
 @media (max-width: 700px) {
+  .chords-hero {
+    gap: 0.75rem;
+  }
+
+  #chords-hero {
+    min-height: 320px;
+  }
+
+  .chords-divider {
+    margin: 1.5rem 0;
+  }
+
+  .chord-button-row {
+    justify-content: center;
+  }
+
   .collection-grid,
   .chord-board-grid {
     grid-template-columns: 1fr;
@@ -342,10 +291,6 @@
   .chord-board-grid > * {
     max-width: 238px;
     margin-inline: auto;
-  }
-
-  .hero-visual__card {
-    min-height: 240px;
   }
 
   .section-title {
