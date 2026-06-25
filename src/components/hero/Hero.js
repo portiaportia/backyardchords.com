@@ -50,8 +50,6 @@ const Hero = () => {
         </div>
 
         <div className="hero-visual" aria-hidden="true">
-            <img id="hand-written-star" class="hand-written-icon" src={star} alt="Handwritten Star" />
-            <img id="hand-written-lines-1" class="hand-written-icon" src={lines1} alt="Handwritten Lines" />
             <img className="hero-bg-shape" src={heroBgShape} alt="" />
             <picture>
               <source
