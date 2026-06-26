@@ -48,20 +48,21 @@
   transform: translateY(-2px);
 }
 
-.fretboard-highlight {
-  color:#a8d64e !important;
+.active-link {
+  color: #a8d64e !important;
 }
 
-.fretboard-link {
-  position:relative;
-  width:fit-content;
+.nav-link-wrapper {
+  position: relative;
+  width: fit-content;
 }
 
 .green-stroke {
-  position:absolute;
-  max-width:7rem;
-  top:1.8em;
-  left:-.2em;
+  position: absolute;
+  max-width: 7rem;
+  top: 1.8em;
+  pointer-events: none;
+  left:-.9em;
 }
 
 @media (max-width: 900px) {

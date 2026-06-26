@@ -1,24 +1,63 @@
-import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Navigation.css";
 import greenStroke from "./green-stroke.png";
 
 export const Navigation = () => {
+  const location = useLocation();
+
+  const isAboutActive = location.pathname === "/" && location.hash === "#about";
+
+  const navItems = [
+    { to: "/lessons", label: "Lessons" },
+    { to: "/strums", label: "Strums" },
+    { to: "/songs", label: "Songs" },
+    { to: "/chords", label: "Chords" },
+    { to: "/fretboard", label: "Fretboard" },
+  ];
+
   return (
     <nav className="navigation">
       <ul className="navigation-list">
-        <li><HashLink smooth to="/#about">About Us</HashLink></li>
-        <li><Link to="/lessons">Lessons</Link></li>
-        <li><Link to="/strums">Strums</Link></li>
-        <li><Link to="/songs">Songs</Link></li>
-        <li><Link to="/chords">Chords</Link></li>
-        <li className="fretboard-link">
-          <Link to="/fretboard" className="fretboard-highlight">Fretboard</Link>
-          <img src={greenStroke}  alt="green stroke" className="green-stroke" />
+        <li className="nav-link-wrapper">
+          <HashLink smooth to="/#about">
+            <span className={isAboutActive ? "active-link" : ""}>
+              About Us
+            </span>
+
+            {isAboutActive && (
+              <img
+                src={greenStroke}
+                alt="green stroke"
+                className="green-stroke"
+              />
+            )}
+          </HashLink>
         </li>
+
+        {navItems.map((item) => (
+          <li key={item.to} className="nav-link-wrapper">
+            <NavLink to={item.to}>
+              {({ isActive }) => (
+                <>
+                  <span className={isActive ? "active-link" : ""}>
+                    {item.label}
+                  </span>
+
+                  {isActive && (
+                    <img
+                      src={greenStroke}
+                      alt="green stroke"
+                      className="green-stroke"
+                    />
+                  )}
+                </>
+              )}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
-}
-
+};
 export default Navigation;
