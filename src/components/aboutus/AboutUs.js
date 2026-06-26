@@ -3,6 +3,9 @@ import Player from "./Player";
 
 import scarletPortrait from "./images/scarlet.png";
 import maverickPortrait from "./images/maverick.png";
+import greenStroke from "./images/green-stroke.png";
+import aboutUsBackground from "./images/about-us-background.png";
+import aboutUsBackground500 from "./images/about-us-background500.png";
 
 const ABOUT_PLAYERS = [
   {
@@ -63,6 +66,7 @@ const AboutUs = () => {
           <h1 id="about-us-title" className="about-us-title">
             <span className="about-us-title-dark">About</span>
             <span className="about-us-title-accent">Us</span>
+            <img src={greenStroke} id="about-title-stroke" alt="" />
           </h1>
 
           <p className="about-us-copy">
@@ -70,6 +74,19 @@ const AboutUs = () => {
             and kid-friendly. We believe every kid can play guitar—and have a
             blast doing it.
           </p>
+
+          <picture className="about-us-background">
+  <source
+    media="(max-width: 700px)"
+    srcSet={aboutUsBackground500}
+  />
+  <img
+    id="about-background-image"
+    src={aboutUsBackground}
+    alt="background camp site"
+    loading="eager"
+  />
+</picture>
         </div>
 
         <div className="about-us-players">
