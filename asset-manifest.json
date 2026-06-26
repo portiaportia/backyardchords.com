@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f108070a.css",
-    "main.js": "/static/js/main.f7073157.js",
+    "main.css": "/static/css/main.bc24980e.css",
+    "main.js": "/static/js/main.7be17c56.js",
     "static/js/453.9f49335e.chunk.js": "/static/js/453.9f49335e.chunk.js",
     "static/media/fireplace.png": "/static/media/fireplace.35a7a2f2fdc767f92d1d.png",
     "static/media/blue-green-background.png": "/static/media/blue-green-background.f90cffa850d353e4480d.png",
@@ -19,11 +19,13 @@
     "static/media/campfire-kids.png": "/static/media/campfire-kids.33725f2ab805d89d406c.png",
     "static/media/background-paper.png": "/static/media/background-paper.145c99b3d6a7ad605f88.png",
     "static/media/fireplace900.png": "/static/media/fireplace900.edc328654d2a037ed9ec.png",
-    "static/media/green-stroke.png": "/static/media/green-stroke.26ce055536b36a5cc547.png",
+    "static/media/green-stroke.png": "/static/media/green-stroke.1b623f9e042838a45b6f.png",
+    "static/media/about-us-background.png": "/static/media/about-us-background.c322d76c834fd7d7d63d.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
     "static/media/hand-sign.png": "/static/media/hand-sign.b43c615856ed450facc0.png",
     "static/media/hero-kids-500.png": "/static/media/hero-kids-500.a7ac283c65bb0250e0fe.png",
     "static/media/star.png": "/static/media/star.cc867022eccfd3f8a7ef.png",
+    "static/media/about-us-background500.png": "/static/media/about-us-background500.dd707a3dc57618d45845.png",
     "static/media/fire.png": "/static/media/fire.0693568aa576d80720a6.png",
     "static/media/fireplace500.png": "/static/media/fireplace500.1c1dc15890cfdcf128d3.png",
     "static/media/lines1.png": "/static/media/lines1.884d0661c73e3c561f77.png",
@@ -41,12 +43,12 @@
     "static/media/arrow.png": "/static/media/arrow.b5cd845fc9d533ad4aa9.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.f108070a.css.map": "/static/css/main.f108070a.css.map",
-    "main.f7073157.js.map": "/static/js/main.f7073157.js.map",
+    "main.bc24980e.css.map": "/static/css/main.bc24980e.css.map",
+    "main.7be17c56.js.map": "/static/js/main.7be17c56.js.map",
     "453.9f49335e.chunk.js.map": "/static/js/453.9f49335e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f108070a.css",
-    "static/js/main.f7073157.js"
+    "static/css/main.bc24980e.css",
+    "static/js/main.7be17c56.js"
   ]
 }
