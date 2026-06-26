@@ -11,6 +11,8 @@ import arrow from "./images/arrow.png";
 import guitar from "./images/guitar.png";
 import lines1 from "./images/lines1.png";
 import heroBgShape from "./images/blue-green-background.png";
+import heroBgShape900 from "./images/blue-green-background-900.png";
+import heroBgShape500 from "./images/blue-green-background-500.png";
 
 const Hero = () => {
   return (
@@ -50,7 +52,22 @@ const Hero = () => {
         </div>
 
         <div className="hero-visual" aria-hidden="true">
-            <img className="hero-bg-shape" src={heroBgShape} alt="" />
+            <picture>
+              <source
+                media="(max-width: 700px)"
+                srcSet={heroBgShape500}
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcSet={heroBgShape900}
+              />
+              <img
+                className="hero-bg-shape"
+                src={heroBgShape}
+                alt=""
+                loading="eager"
+              />
+            </picture>
             <picture>
               <source
                 media="(max-width: 700px)"

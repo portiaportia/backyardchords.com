@@ -16,6 +16,7 @@
 
 .chords-hero__copy {
   max-width: 34rem;
+  min-width: 0;
 }
 
 .page-title {
@@ -30,6 +31,9 @@
 
 .chords-hero__feature {
   margin-top: clamp(1.25rem, 3vw, 2rem);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .chords-hero__feature .campfire-chords {
@@ -42,31 +46,51 @@
   width: 100%;
   min-height: 560px;
   isolation: isolate;
+  overflow: visible;
 }
 
-#chords-hero .hero-bg-shape {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
-  overflow:visible;
-}
-
-#chords-hero > img:not(.hero-bg-shape) {
+#chords-hero picture {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  z-index: 1;
   pointer-events: none;
 }
 
-#chords-hero img {
+#chords-hero picture img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  pointer-events: none;
+}
+
+#chords-hero picture:first-child {
+  z-index: 0;
+}
+
+#chords-hero picture:first-child img {
+  width: 120%;
+  height: 120%;
   max-width: none;
+  object-fit: cover;
+}
+
+#chords-hero picture:nth-child(2) {
+  z-index: 2;
+}
+
+#chords-hero picture:nth-child(3) {
+  z-index: 1;
+}
+
+#campfire-kids-image {
+  transform: translate(4%, 4%) rotate(5deg) scale(0.65);
+}
+
+.fireplace {
+  transform: translate(0%, 20%) scale(0.85);
 }
 
 /* ---------- DIVIDER ---------- */
@@ -158,24 +182,15 @@
   align-items: start;
 }
 
-#campfire-kids-image {
-  transform: translate(-4%, 0%) rotate(5deg) scale(0.85);
-}
-
-.fireplace {
-  z-index:2 !important;
-  transform: translate(0%, 20%) scale(0.85);
-}
-
 .chord-board-grid > * {
   width: 100%;
   max-width: 238px;
 }
 
 .all-chords-section {
-  margin-top:-10%;
-  padding-bottom:2%;
-  z-index:-5 !important;
+  margin-top: -10%;
+  padding-bottom: 2%;
+  z-index: -5 !important;
 }
 
 /* ---------- GENERAL ---------- */
@@ -204,7 +219,7 @@
 .chords-hero,
 .chord-list {
   width: 100%;
-  margin-bottom:1%;
+  margin-bottom: 1%;
 }
 
 /* ---------- LEGACY CLASSES KEPT SAFE ---------- */
@@ -235,17 +250,28 @@
   }
 
   .chords-hero__copy {
-    max-width: 42rem;
-    margin-inline: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     text-align: center;
     padding-top: 0;
+  }
+
+  .chords-hero__feature {
+    display: flex;
+    justify-content: center;
+  }
+
+  .campfire-chords-banner {
+    margin-inline: auto;
+    margin-bottom: 10%;
   }
 
   .page-title,
   .fretboard-text {
     margin-inline: auto;
-    z-index:4;
-    position:relative;
+    z-index: 4;
+    position: relative;
   }
 
   #chords-hero {
@@ -260,9 +286,9 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .campfire-chords-banner {
-    margin-bottom:10%;
-  }
+  #campfire-kids-image {
+  transform: translate(4%, -4%) rotate(5deg) scale(0.65);
+}
 }
 
 @media (max-width: 700px) {
