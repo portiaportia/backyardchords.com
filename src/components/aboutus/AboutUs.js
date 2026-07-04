@@ -6,6 +6,7 @@ import maverickPortrait from "./images/maverick.png";
 import greenStroke from "./images/green-stroke.png";
 import aboutUsBackground from "./images/about-us-background.png";
 import aboutUsBackground500 from "./images/about-us-background500.png";
+import Video from "./Video";
 
 const ABOUT_PLAYERS = [
   {
@@ -88,7 +89,7 @@ const AboutUs = () => {
   />
 </picture>
         </div>
-
+        <Video />
         <div className="about-us-players">
           {ABOUT_PLAYERS.map((player) => (
             <Player key={player.name} {...player} />
