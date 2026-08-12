@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.245c8f7b.css",
-    "main.js": "/static/js/main.9e7120ef.js",
+    "main.css": "/static/css/main.716e7a86.css",
+    "main.js": "/static/js/main.a18da11a.js",
     "static/js/453.4e771d5b.chunk.js": "/static/js/453.4e771d5b.chunk.js",
     "static/media/green-highlight2.png": "/static/media/green-highlight2.88dbeedd0e4387112ac0.png",
     "static/media/green-highlight1.png": "/static/media/green-highlight1.df4337b26e419a72f35d.png",
@@ -21,13 +21,13 @@
     "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
     "static/media/campfire-background900.png": "/static/media/campfire-background900.e1ac0c71b386a28c7f12.png",
     "static/media/footer-guitar.png": "/static/media/footer-guitar.1879e1f6c1e0f2aa3c03.png",
-    "static/media/maverick.png": "/static/media/maverick.3a31636872aa7724e08d.png",
+    "static/media/maverick-border.png": "/static/media/maverick-border.783e2b253150ed5292c9.png",
     "static/media/number-background.png": "/static/media/number-background.7806e34d0894bf3e3412.png",
     "static/media/blue-green-background-500.png": "/static/media/blue-green-background-500.5f9842b96bf69c24ae6f.png",
     "static/media/blue-green-background-900.png": "/static/media/blue-green-background-900.5f9842b96bf69c24ae6f.png",
     "static/media/guitar-head.png": "/static/media/guitar-head.a5e523d90bc875a14cf8.png",
     "static/media/guitar.png": "/static/media/guitar.b3a8e1a9f34fc2232c19.png",
-    "static/media/scarlet.png": "/static/media/scarlet.fd6918e7a760cc7ddfbc.png",
+    "static/media/scarlet-border.png": "/static/media/scarlet-border.902d8fdcec7f46321802.png",
     "static/media/right-hand.png": "/static/media/right-hand.a93f07d37979d577ce2a.png",
     "static/media/hero-kids-900.png": "/static/media/hero-kids-900.567b086a791db6e855b7.png",
     "static/media/left-hand.png": "/static/media/left-hand.beb4cc0d3fb38c8c0fe5.png",
@@ -61,12 +61,12 @@
     "static/media/arrow.png": "/static/media/arrow.b5cd845fc9d533ad4aa9.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.245c8f7b.css.map": "/static/css/main.245c8f7b.css.map",
-    "main.9e7120ef.js.map": "/static/js/main.9e7120ef.js.map",
+    "main.716e7a86.css.map": "/static/css/main.716e7a86.css.map",
+    "main.a18da11a.js.map": "/static/js/main.a18da11a.js.map",
     "453.4e771d5b.chunk.js.map": "/static/js/453.4e771d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.245c8f7b.css",
-    "static/js/main.9e7120ef.js"
+    "static/css/main.716e7a86.css",
+    "static/js/main.a18da11a.js"
   ]
 }
