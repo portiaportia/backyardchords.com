@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.31ffd7ef.css",
-    "main.js": "/static/js/main.8ff2a406.js",
+    "main.css": "/static/css/main.245c8f7b.css",
+    "main.js": "/static/js/main.9e7120ef.js",
     "static/js/453.4e771d5b.chunk.js": "/static/js/453.4e771d5b.chunk.js",
     "static/media/green-highlight2.png": "/static/media/green-highlight2.88dbeedd0e4387112ac0.png",
     "static/media/green-highlight1.png": "/static/media/green-highlight1.df4337b26e419a72f35d.png",
@@ -20,6 +20,7 @@
     "static/media/campfire-background.png": "/static/media/campfire-background.2d0cc0367cd0aba68ca8.png",
     "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
     "static/media/campfire-background900.png": "/static/media/campfire-background900.e1ac0c71b386a28c7f12.png",
+    "static/media/footer-guitar.png": "/static/media/footer-guitar.1879e1f6c1e0f2aa3c03.png",
     "static/media/maverick.png": "/static/media/maverick.3a31636872aa7724e08d.png",
     "static/media/number-background.png": "/static/media/number-background.7806e34d0894bf3e3412.png",
     "static/media/blue-green-background-500.png": "/static/media/blue-green-background-500.5f9842b96bf69c24ae6f.png",
@@ -47,7 +48,6 @@
     "static/media/fire.png": "/static/media/fire.0693568aa576d80720a6.png",
     "static/media/fireplace500.png": "/static/media/fireplace500.1c1dc15890cfdcf128d3.png",
     "static/media/lines1.png": "/static/media/lines1.884d0661c73e3c561f77.png",
-    "static/media/guitar-white.png": "/static/media/guitar-white.0af0b04c44d6532a8404.png",
     "static/media/songs.png": "/static/media/songs.e7bd6e9d13de424334c0.png",
     "static/media/achord.png": "/static/media/achord.71322e150e019f13e8dc.png",
     "static/media/lightening-bolt.png": "/static/media/lightening-bolt.d077ba611447ac5f9ad2.png",
@@ -56,17 +56,17 @@
     "static/media/dashes.png": "/static/media/dashes.50d1733ecc2e012cc8a8.png",
     "static/media/tips.png": "/static/media/tips.bf44c346d54336354bda.png",
     "static/media/blue-line.png": "/static/media/blue-line.d5b09100bc991c56086a.png",
-    "static/media/footer-background.png": "/static/media/footer-background.0fcf4935defd07f60df6.png",
+    "static/media/footer-background.png": "/static/media/footer-background.b71ae1f5c1830119252a.png",
     "static/media/header-background.png": "/static/media/header-background.7552e69b9a117da072a3.png",
     "static/media/arrow.png": "/static/media/arrow.b5cd845fc9d533ad4aa9.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.31ffd7ef.css.map": "/static/css/main.31ffd7ef.css.map",
-    "main.8ff2a406.js.map": "/static/js/main.8ff2a406.js.map",
+    "main.245c8f7b.css.map": "/static/css/main.245c8f7b.css.map",
+    "main.9e7120ef.js.map": "/static/js/main.9e7120ef.js.map",
     "453.4e771d5b.chunk.js.map": "/static/js/453.4e771d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31ffd7ef.css",
-    "static/js/main.8ff2a406.js"
+    "static/css/main.245c8f7b.css",
+    "static/js/main.9e7120ef.js"
   ]
 }
