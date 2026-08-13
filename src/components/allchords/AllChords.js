@@ -20,7 +20,7 @@ const AllChords = ({ selectedLetter, onSelectLetter }) => {
          <button
             type="button"
             id="campfire-chords-button"
-            className={`letter-chooser-note ${selectedLetter === 'campfire' ? "active-blue" : ""}`}
+            className={`campfire-color letter-chooser-note ${selectedLetter === 'campfire' ? "active-blue" : ""}`}
             onClick={() => onSelectLetter("campfire")}>
               Campfire Chords
           </button>
