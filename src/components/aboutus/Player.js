@@ -8,7 +8,6 @@ const Player = ({ name, accent, image, alt, facts, quote }) => {
 
       <div className="player-card-grid">
         <div className="player-card-media">
-          <span className="player-card-splash" aria-hidden="true" />
           <img className="player-card-image" src={image} alt={alt} />
         </div>
 

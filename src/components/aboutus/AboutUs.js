@@ -1,8 +1,8 @@
 import "./css/AboutUs.css";
 import Player from "./Player";
 
-import scarletPortrait from "./images/scarlet.png";
-import maverickPortrait from "./images/maverick.png";
+import scarletPortrait from "./images/scarlet-border.png";
+import maverickPortrait from "./images/maverick-border.png";
 import greenStroke from "./images/green-stroke.png";
 import aboutUsBackground from "./images/about-us-background.png";
 import aboutUsBackground500 from "./images/about-us-background500.png";

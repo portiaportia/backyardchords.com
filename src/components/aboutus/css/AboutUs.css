@@ -87,8 +87,7 @@
   transform:translateX(-10%) scale(130%);
 }
 
-.about-us-background img,
-#kids-hero-image {
+.about-us-background img {
   display: block;
   width: 100%;
   height: auto;
@@ -129,7 +128,7 @@
 
 @media (max-width: 980px) {
   .about-us-title {
-    font-size: clamp(2.5rem, 12vw, 4rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
   .about-us-intro {
     min-height: auto;
@@ -153,7 +152,7 @@
 
 @media (max-width: 700px) {
   .about-us-title {
-    font-size: clamp(2.5rem, 12vw, 4rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
   #about-title-stroke {

@@ -69,6 +69,7 @@
   .navigation-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: .7rem;
+    font-size:.9em;
   }
 }

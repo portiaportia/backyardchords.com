@@ -5,13 +5,7 @@ const LETTERS = ["A", "B", "C", "D", "E", "F", "G"];
 
 const AllChords = ({ selectedLetter, onSelectLetter }) => {
   return (
-    <section className="all-chords-section section" id="all-chords-selector" aria-labelledby="all-chords-title">
-      <div className="all-chords-header">
-        <h2 id="all-chords-title" className="section-title">
-          All Chords
-        </h2>
-      </div>
-
+  <section className="all-chords-section section" id="all-chords-selector" aria-labelledby="all-chords-title">
       <div className="letter-selector-buttons chord-letters">
         {LETTERS.map((note) => (
           <button
@@ -23,7 +17,15 @@ const AllChords = ({ selectedLetter, onSelectLetter }) => {
             {note}
           </button>
         ))}
+         <button
+            type="button"
+            id="campfire-chords-button"
+            className={`letter-chooser-note ${selectedLetter === 'campfire' ? "active-blue" : ""}`}
+            onClick={() => onSelectLetter("campfire")}>
+              Campfire Chords
+          </button>
       </div>
+     
     </section>
   );
 };

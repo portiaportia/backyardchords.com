@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Guitar from "./images/guitar-white.png";
+import Guitar from "./images/footer-guitar.png";
 
 const Footer = () => {
     return (

@@ -10,8 +10,6 @@ export const Navigation = () => {
 
   const navItems = [
     { to: "/lessons", label: "Lessons" },
-    { to: "/strums", label: "Strums" },
-    { to: "/songs", label: "Songs" },
     { to: "/chords", label: "Chords" },
     { to: "/fretboard", label: "Fretboard" },
   ];

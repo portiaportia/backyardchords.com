@@ -56,6 +56,9 @@
   /* Motion */
   --transition-fast: 150ms ease;
   --transition-base: 220ms ease;
+
+  min-height:100%;
+  margin:0;
 }
 
 * {
@@ -77,6 +80,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:black;
 }
 
 .page {

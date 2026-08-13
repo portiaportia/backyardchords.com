@@ -4,12 +4,12 @@ const Video = () => {
     return (
         <iframe
             id="intro-video"
-            src="https://www.youtube.com/embed/K0qIVGHHHsk?si=WJZsjvlou05hadMl" 
+            src="https://www.youtube.com/embed/DqhPZP1auHo?si=rI3vPyTE4phOeEWm" 
             title="Backyard Chords Intro" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen></iframe>
     );
 };
 

@@ -8,6 +8,11 @@
   line-height: 1.6;
 }
 
+#fretboard-title {
+  width:100%;
+  max-width:100%;
+}
+
 .fretboard-board-shell {
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);

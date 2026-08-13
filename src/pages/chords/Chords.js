@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 import "./Chords.css";
-import CampfireChords from "../../components/campfire/CampfireChords";
 import Chord from "../../components/chord/Chord";
 import AllChords from "../../components/allchords/AllChords";
-import campfirekids from "./images/campfire-kids.png";
-import campfirekids900 from "./images/campfire-kids900.png";
-import campfirekids500 from "./images/campfire-kids500.png";
-import fireplace from "./images/fireplace.png";
-import fireplace900 from "./images/fireplace900.png";
-import fireplace500 from "./images/fireplace500.png";
-import campfireBgShape from "./images/campfire-background.png";
-import campfireBgShape500 from "./images/campfire-background500.png";
-import campfireBgShape900 from "./images/campfire-background900.png";
 
 const colors = {
   yellow: "#F8EFBF",
@@ -124,71 +114,14 @@ const Chords = () => {
       <div className="container">
         <section className="chords-hero">
           <div className="chords-hero__copy">
+        
             <span className="page-kicker">Chords</span>
+
 
             <h1 className="page-title">Learn Guitar Chords</h1>
 
-            <p className="fretboard-text">
-              Chords are the building blocks of songs.
-            </p>
-
             <div className="chords-hero__feature">
-              <CampfireChords
-                onSelect={() => setSelectedLetter("campfire")}
-                colors={colors}
-              />
             </div>
-          </div>
-
-          <div id="chords-hero" aria-hidden="true">
-            <picture>
-              <source
-                media="(max-width: 700px)"
-                srcSet={campfireBgShape500}
-              />
-              <source
-                media="(max-width: 1200px)"
-                srcSet={campfireBgShape900}
-              />
-              <img
-                className="hero-bg-shape"
-                src={campfireBgShape}
-                alt=""
-                loading="eager"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width: 700px)"
-                srcSet={fireplace500}
-              />
-              <source
-                media="(max-width: 1200px)"
-                srcSet={fireplace900}
-              />
-              <img
-                className="fireplace"
-                src={fireplace}
-                alt="fireplace"
-                loading="eager"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width: 700px)"
-                srcSet={campfirekids500}
-              />
-              <source
-                media="(max-width: 1200px)"
-                srcSet={campfirekids900}
-              />
-              <img
-                id="campfire-kids-image"
-                src={campfirekids}
-                alt="kids holding guitars"
-                loading="eager"
-              />
-            </picture>
           </div>
         </section>
 

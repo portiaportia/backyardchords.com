@@ -17,24 +17,17 @@ const FeatureGrid = () => {
           <IntroFeatureCard />
 
           <FeatureCard
-            variant="blue"
-            title="Chords"
-            image={chords}
-            link="/chords"
-          />
-
-          <FeatureCard
             variant="paper"
-            title="Strums"
+            title="Lessons"
             image={strums}
             link="/strums"
           />
 
           <FeatureCard
             variant="green"
-            title="Songs"
-            image={songs}
-            link="/songs"
+            title="Chords"
+            image={chords}
+            link="/chords"
           />
 
           <FeatureCard

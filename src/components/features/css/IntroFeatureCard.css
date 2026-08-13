@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
 
-  min-height: 320px;
 
   padding-right: 1rem;
 }
@@ -51,6 +50,7 @@
   text-transform: uppercase;
 
   text-decoration: none;
+  width:fit-content;
 }
 
 #blue-line {
@@ -67,7 +67,7 @@
   position:absolute;
   width:40px;
   bottom:13%;
-  right:-10%;
+  right:-30%;
 }
 
 .intro-feature-button {
@@ -76,7 +76,7 @@
     display: inline-block; /* or block */
     background-image:url("../images/green-highlight.png");
     margin-top:15px;
-    margin-left:0px;
+    margin-left:50px;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 0.95rem 1.4rem;
@@ -87,6 +87,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
+
+@media (max-width: 1100px) {
+  #blue-line {
+    margin-left: -4%;
+    margin-top: 0.35rem;
+    width: 46%;
+  }
+}
 
 @media (max-width: 700px) {
   .intro-feature {
@@ -117,24 +125,10 @@
   #blue-line {
     margin-left: -4%;
     margin-top: 0.35rem;
-    width: 102%;
+    width: 90%;
   }
 
   .intro-feature-title {
     gap: 0.15rem;
   }
-
-  @media (max-width: 700px) {
-  .intro-line-1 {
-    margin-left: -10rem;
-  }
-
-  .intro-line-2 {
-    margin-left: -1rem;
-  }
-
-  .intro-line-3 {
-    margin-left: 10rem;
-  }
-}
 }

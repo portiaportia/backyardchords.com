@@ -8,28 +8,31 @@ const IntroFeatureCard = () => {
     <div className="intro-feature">
       <h2 className="intro-feature-title">
           <span className="intro-line intro-line-1">
-            Learn it.
+            Learn it. Play It.
           </span>
 
           <span className="intro-line intro-line-2">
-            Play it.
-          </span>
-
-          <span className="intro-line intro-line-3">
             Love it.
           </span>
         <img id="blue-line" src={BlueLine} alt="Blue Underline" />
       </h2>
 
-      <p className="intro-feature-text">
-        Step-by-step lessons, chord charts, strumming patterns, and fun songs
-        made for kids.
-      </p>
+     
 
-      <a href="#lessons" className="intro-feature-button">
-        <span id="intro-features-button-text"><Link to="/lessons">Browse Lessons</Link></span>
-        <img src={ArrowRight} id="arrow-right" alt="Right Arrow" />
-      </a> 
+      <Link
+  to="/lessons"
+  className="intro-feature-button"
+>
+  <span id="intro-features-button-text">
+    Browse Lessons
+  </span>
+
+  <img
+    src={ArrowRight}
+    id="arrow-right"
+    alt=""
+  />
+</Link>
     </div>
   );
 };
