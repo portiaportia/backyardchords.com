@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f33029a.css",
-    "main.js": "/static/js/main.a18da11a.js",
+    "main.css": "/static/css/main.17591b6d.css",
+    "main.js": "/static/js/main.318239e6.js",
     "static/js/453.4e771d5b.chunk.js": "/static/js/453.4e771d5b.chunk.js",
     "static/media/green-highlight2.png": "/static/media/green-highlight2.88dbeedd0e4387112ac0.png",
     "static/media/green-highlight1.png": "/static/media/green-highlight1.df4337b26e419a72f35d.png",
     "static/media/green-highlight3.png": "/static/media/green-highlight3.216977bb05aa7157ec97.png",
     "static/media/green-highlight4.png": "/static/media/green-highlight4.4729543bea94610693e8.png",
-    "static/media/fireplace.png": "/static/media/fireplace.35a7a2f2fdc767f92d1d.png",
     "static/media/blue-highlight4.png": "/static/media/blue-highlight4.5494133ef3e709e69840.png",
     "static/media/blue-highlight3.png": "/static/media/blue-highlight3.bf9009c595e2ae062377.png",
     "static/media/blue-highlight2.png": "/static/media/blue-highlight2.38e929458b7a7227846c.png",
@@ -17,9 +16,7 @@
     "static/media/play-button.png": "/static/media/play-button.d7ec4b4486b5fcdb4307.png",
     "static/media/bar-chart.png": "/static/media/bar-chart.c3b4e3562205dc32d28c.png",
     "static/media/clock.png": "/static/media/clock.a523dbf5158239be3211.png",
-    "static/media/campfire-background.png": "/static/media/campfire-background.2d0cc0367cd0aba68ca8.png",
     "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
-    "static/media/campfire-background900.png": "/static/media/campfire-background900.e1ac0c71b386a28c7f12.png",
     "static/media/footer-guitar.png": "/static/media/footer-guitar.1879e1f6c1e0f2aa3c03.png",
     "static/media/maverick-border.png": "/static/media/maverick-border.783e2b253150ed5292c9.png",
     "static/media/number-background.png": "/static/media/number-background.7806e34d0894bf3e3412.png",
@@ -31,12 +28,7 @@
     "static/media/right-hand.png": "/static/media/right-hand.a93f07d37979d577ce2a.png",
     "static/media/hero-kids-900.png": "/static/media/hero-kids-900.567b086a791db6e855b7.png",
     "static/media/left-hand.png": "/static/media/left-hand.beb4cc0d3fb38c8c0fe5.png",
-    "static/media/campfire-background500.png": "/static/media/campfire-background500.0ed9d1af6e93996ded39.png",
-    "static/media/campfire-kids500.png": "/static/media/campfire-kids500.d4f562543d22c3bcaa06.png",
-    "static/media/campfire-kids900.png": "/static/media/campfire-kids900.d4f562543d22c3bcaa06.png",
-    "static/media/campfire-kids.png": "/static/media/campfire-kids.33725f2ab805d89d406c.png",
     "static/media/background-paper.png": "/static/media/background-paper.145c99b3d6a7ad605f88.png",
-    "static/media/fireplace900.png": "/static/media/fireplace900.edc328654d2a037ed9ec.png",
     "static/media/green-stroke.png": "/static/media/green-stroke.1b623f9e042838a45b6f.png",
     "static/media/about-us-background.png": "/static/media/about-us-background.c322d76c834fd7d7d63d.png",
     "static/media/holding.png": "/static/media/holding.921ad910d3e7a31257ff.png",
@@ -45,8 +37,6 @@
     "static/media/star.png": "/static/media/star.cc867022eccfd3f8a7ef.png",
     "static/media/blue-stroke-lesson.png": "/static/media/blue-stroke-lesson.d300651073681f8b8c9c.png",
     "static/media/about-us-background500.png": "/static/media/about-us-background500.dd707a3dc57618d45845.png",
-    "static/media/fire.png": "/static/media/fire.0693568aa576d80720a6.png",
-    "static/media/fireplace500.png": "/static/media/fireplace500.1c1dc15890cfdcf128d3.png",
     "static/media/lines1.png": "/static/media/lines1.884d0661c73e3c561f77.png",
     "static/media/songs.png": "/static/media/songs.e7bd6e9d13de424334c0.png",
     "static/media/achord.png": "/static/media/achord.71322e150e019f13e8dc.png",
@@ -61,12 +51,12 @@
     "static/media/arrow.png": "/static/media/arrow.b5cd845fc9d533ad4aa9.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.3f33029a.css.map": "/static/css/main.3f33029a.css.map",
-    "main.a18da11a.js.map": "/static/js/main.a18da11a.js.map",
+    "main.17591b6d.css.map": "/static/css/main.17591b6d.css.map",
+    "main.318239e6.js.map": "/static/js/main.318239e6.js.map",
     "453.4e771d5b.chunk.js.map": "/static/js/453.4e771d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f33029a.css",
-    "static/js/main.a18da11a.js"
+    "static/css/main.17591b6d.css",
+    "static/js/main.318239e6.js"
   ]
 }
