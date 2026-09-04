@@ -3,7 +3,6 @@
 
     min-width: 0;
 
-    overflow: hidden;
 
     background: rgba(243, 239, 230, 0.82);
 
@@ -20,7 +19,6 @@
 
 
 .video-card:hover {
-    transform: translateY(-3px);
 
     box-shadow: 2px 7px 14px rgba(18, 18, 18, 0.12);
 }
@@ -38,8 +36,6 @@ VIDEO / ARTWORK AREA
     aspect-ratio: 16 / 8.5;
 
     overflow: hidden;
-
-    isolation: isolate;
 }
 
 
@@ -153,82 +149,6 @@ The 01 / 02 / 03 sits above the brush stroke.
 
 
 /* -----------------------------
-PLAY BUTTON
------------------------------ */
-
-.video-card__play {
-    position: absolute;
-
-    z-index: 5;
-
-    right: 20px;
-    bottom: 30px;
-
-    width: 60px;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;
-
-    background: transparent;
-
-    border: none;
-
-    border-radius: 50%;
-
-    cursor: pointer;
-
-    transition:
-        transform var(--transition-fast),
-        filter var(--transition-fast);
-}
-
-
-.video-card__play:hover {
-    transform: scale(1.08) rotate(-2deg);
-
-    filter: brightness(1.05);
-}
-
-
-.video-card__play:active {
-    transform: scale(0.98);
-}
-
-
-.video-card__play-image {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-
-    pointer-events: none;
-}
-
-/* -----------------------------
-YOUTUBE PLAYER
------------------------------ */
-
-.video-card__iframe {
-    position: absolute;
-
-    z-index: 10;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    border: 0;
-}
-
-
-/* -----------------------------
 CARD FOOTER
 ----------------------------- */
 
@@ -256,7 +176,6 @@ CARD FOOTER
 .video-card__title {
     position: relative;
 
-    z-index: 1;
 
     min-width: 0;
 

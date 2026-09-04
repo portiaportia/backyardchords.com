@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+.modal .chord-card {
+  padding-left:0;
+  padding-right:0;
+}
+
 .chord-title {
   margin: 0 0 0.35rem;
   color: #111;
@@ -56,6 +61,10 @@
   aspect-ratio: 0.68 / 1;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.modal .chord-open-row, .modal .chord-board {
+  width:70%;
 }
 
 .chord-string-line {

@@ -23,8 +23,16 @@ import greenHighlight2 from "./images/green-highlight2.png";
 import greenHighlight3 from "./images/green-highlight3.png";
 import greenHighlight4 from "./images/green-highlight4.png";
 
-import Video from "../../components/video/Video";
+import Lesson from "../../components/lesson/Lesson";
 
+const colors = {
+  yellow: "#F8EFBF",
+  green: "#E7F0D9",
+  purple: "#EFE7F8",
+  peach: "#FCE7DD",
+  blue: "#E8F2FF",
+  mint: "#DFF5EE",
+};
 
 const backgroundHighlights = [
     blueHighlight1,
@@ -46,22 +54,25 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: partsOfGuitar,
         backgroundImage: backgroundHighlights[0],
+        chords:[]
     },
     {
         number: "02",
         title: "Tuning Your Guitar",
         duration: "4:15",
-        code: "Y4fpsQrmw84",
+        code: "NrekVYJECow",
         image: guitarHead,
         backgroundImage: backgroundHighlights[1],
+        chords:[]
     },
-    {
+ /*   {
         number: "03",
         title: "Holding Your Guitar",
         duration: "3:45",
         code: "Y4fpsQrmw84",
         image: holding,
         backgroundImage: backgroundHighlights[2],
+        chords:[]
     },
     {
         number: "04",
@@ -70,6 +81,7 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: leftHand,
         backgroundImage: backgroundHighlights[3],
+        chords:[]
     },
     {
         number: "05",
@@ -78,6 +90,7 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: rightHand,
         backgroundImage: backgroundHighlights[4],
+        chords:[]
     },
     {
         number: "06",
@@ -86,6 +99,11 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: partsOfGuitar,
         backgroundImage: backgroundHighlights[5],
+        chords:[
+            { title: "E Major", frets: [0, 2, 2, 1, 0, 0], background: colors.mint },
+            { title: "A Major", frets: [-1, 0, 2, 2, 2, 0], background: colors.peach },
+            { title: "D Major", frets: [-1, -1, 0, 2, 3, 2], background: colors.purple }
+        ]
     },
     {
         number: "07",
@@ -94,6 +112,7 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: partsOfGuitar,
         backgroundImage: backgroundHighlights[6],
+        chords:[]
     },
     {
         number: "08",
@@ -102,7 +121,8 @@ const lessons = [
         code: "Y4fpsQrmw84",
         image: partsOfGuitar,
         backgroundImage: backgroundHighlights[7],
-    },
+        chords:[]
+    },*/
 ];
 
 
@@ -197,20 +217,19 @@ const Lessons = () => {
                 <div className="lessons">
 
                     {lessons.map((lesson) => (
-
-                        <Video
-                            key={lesson.number}
-                            className="lesson"
-                            number={lesson.number}
-                            title={lesson.title}
-                            duration={lesson.duration}
-                            code={lesson.code}
-                            image={lesson.image}
-                            backgroundImage={lesson.backgroundImage}
-                            numberBackground={numberBackground}
-                            titleStroke={blueStrokeLesson}
-                        />
-
+                            <Lesson
+                                key={lesson.number}
+                                className="lesson"
+                                number={lesson.number}
+                                title={lesson.title}
+                                duration={lesson.duration}
+                                code={lesson.code}
+                                image={lesson.image}
+                                backgroundImage={lesson.backgroundImage}
+                                numberBackground={numberBackground}
+                                titleStroke={blueStrokeLesson}
+                                chords={lesson.chords}
+                            />
                     ))}
 
                 </div>

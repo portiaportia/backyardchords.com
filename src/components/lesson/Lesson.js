@@ -1,10 +1,11 @@
 import { useState } from "react";
+import LessonModel from "./LessonModel";
+import Video from "./Video";
 
-import "./Video.css";
-import playButton from "./images/play-button.png";
+import "./css/Lesson.css";
 
 
-const Video = ({
+const Lesson = ({
     className,
     code,
     number,
@@ -15,18 +16,22 @@ const Video = ({
     numberBackground,
     titleStroke,
     artworkStyle,
+    chords
 }) => {
 
     const [playing, setPlaying] = useState(false);
 
+    const closeModel = () => {
+        setPlaying(false);
+    }
 
     return (
 
         <article className={`video-card ${className || ""}`}>
 
-            <div className="video-card__media">
+            <div className="video-card__media" onClick={() => setPlaying(true)}>
 
-                {!playing && (
+                {!(playing && chords.length === 0) &&(
 
                     <>
 
@@ -53,6 +58,7 @@ const Video = ({
                                 src={backgroundImage}
                                 alt=""
                                 aria-hidden="true"
+                                
                             />
 
                         )}
@@ -73,43 +79,33 @@ const Video = ({
                             <div className="video-card__artwork-placeholder"></div>
 
                         )}
-
-
-                        <button
-                            className="video-card__play"
-                            type="button"
-                            aria-label={`Play ${title}`}
-                            onClick={() => setPlaying(true)}
-                        >
-
-                            <img
-                                className="video-card__play-image"
-                                src={playButton}
-                                alt=""
-                                aria-hidden="true"
-                            />
-
-                        </button>
-
                     </>
 
                 )}
 
 
-                {playing && (
-
-                    <iframe
-                        className="video-card__iframe"
-                        src={`https://www.youtube.com/embed/${code}?autoplay=1&rel=0`}
-                        title={title}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    >
-                    </iframe>
-
-                )}
+                {playing ? (
+                    chords.length === 0 ? (
+                        <Video 
+                            title={title}
+                            code={code}
+                            />
+                        ) : (
+                            <LessonModel
+                            key={number}
+                                className="lesson"
+                                number={number}
+                                title={title}
+                                duration={duration}
+                                code={code}
+                                image={image}
+                                chords={chords}
+                                closeModel ={closeModel}/>
+                        )
+                    ) : (
+                    <></>
+                    )}
+                                
 
             </div>
 
@@ -156,4 +152,4 @@ const Video = ({
 };
 
 
-export default Video;
+export default Lesson;
