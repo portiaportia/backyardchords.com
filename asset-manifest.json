@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.9939a458.css",
-    "main.js": "/static/js/main.ba54a8b7.js",
+    "main.css": "/static/css/main.7f6c3a55.css",
+    "main.js": "/static/js/main.c1f7ce15.js",
     "static/js/453.4e771d5b.chunk.js": "/static/js/453.4e771d5b.chunk.js",
     "static/media/blue-green-background.png": "/static/media/blue-green-background.f90cffa850d353e4480d.png",
-    "static/media/play-button.png": "/static/media/play-button.d7ec4b4486b5fcdb4307.png",
     "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
     "static/media/maverick-border.png": "/static/media/maverick-border.783e2b253150ed5292c9.png",
     "static/media/blue-green-background-500.png": "/static/media/blue-green-background-500.5f9842b96bf69c24ae6f.png",
@@ -49,12 +48,12 @@
     "static/media/arrow.png": "/static/media/arrow.b5cd845fc9d533ad4aa9.png",
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
-    "main.9939a458.css.map": "/static/css/main.9939a458.css.map",
-    "main.ba54a8b7.js.map": "/static/js/main.ba54a8b7.js.map",
+    "main.7f6c3a55.css.map": "/static/css/main.7f6c3a55.css.map",
+    "main.c1f7ce15.js.map": "/static/js/main.c1f7ce15.js.map",
     "453.4e771d5b.chunk.js.map": "/static/js/453.4e771d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9939a458.css",
-    "static/js/main.ba54a8b7.js"
+    "static/css/main.7f6c3a55.css",
+    "static/js/main.c1f7ce15.js"
   ]
 }
