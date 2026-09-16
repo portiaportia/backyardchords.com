@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './Layout';
@@ -13,18 +13,18 @@ import Songs from "./pages/songs/Songs";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />}/>
-          <Route path="/fretboard" element={<Fretboard />}/>
-          <Route path ="/chords" element={<Chords />}/>
-          <Route path = "/lessons" element={<Lessons />}/>
-          <Route path = "/strums" element={<Strums />}/>
-          <Route path = "/songs" element={<Songs />}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="fretboard" element={<Fretboard />} />
+        <Route path="chords" element={<Chords />} />
+        <Route path="lessons" element={<Lessons />} />
+        <Route path="strums" element={<Strums />} />
+        <Route path="songs" element={<Songs />} />
+      </Route>
+    </Routes>
+  </HashRouter>
   )
 }
 
