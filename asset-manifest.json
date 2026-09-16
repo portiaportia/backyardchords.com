@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7f6c3a55.css",
-    "main.js": "/static/js/main.3d599099.js",
+    "main.js": "/static/js/main.92060c7a.js",
     "static/js/453.4e771d5b.chunk.js": "/static/js/453.4e771d5b.chunk.js",
     "static/media/blue-green-background.png": "/static/media/blue-green-background.f90cffa850d353e4480d.png",
     "static/media/hero-kids-1400.png": "/static/media/hero-kids-1400.29f2ce473c4a9c954e69.png",
@@ -29,7 +29,7 @@
     "static/media/blue-highlight1.png": "/static/media/blue-highlight1.40cf61ae92e134c94c18.png",
     "static/media/blue-highlight2.png": "/static/media/blue-highlight2.ed1ea04bafa91a1506cd.png",
     "static/media/songs.png": "/static/media/songs.e7bd6e9d13de424334c0.png",
-    "static/media/achord.png": "/static/media/achord.71322e150e019f13e8dc.png",
+    "static/media/achord.png": "/static/media/achord.49ff4bf63cb8344cb323.png",
     "static/media/lightening-bolt.png": "/static/media/lightening-bolt.d077ba611447ac5f9ad2.png",
     "static/media/arrow-white.png": "/static/media/arrow-white.ef537460d675421f0507.png",
     "static/media/bar-chart.png": "/static/media/bar-chart.d565a588e4ee9f70bb8b.png",
@@ -47,11 +47,11 @@
     "static/media/black-highlight.png": "/static/media/black-highlight.aba37981c361feb0268a.png",
     "index.html": "/index.html",
     "main.7f6c3a55.css.map": "/static/css/main.7f6c3a55.css.map",
-    "main.3d599099.js.map": "/static/js/main.3d599099.js.map",
+    "main.92060c7a.js.map": "/static/js/main.92060c7a.js.map",
     "453.4e771d5b.chunk.js.map": "/static/js/453.4e771d5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f6c3a55.css",
-    "static/js/main.3d599099.js"
+    "static/js/main.92060c7a.js"
   ]
 }
