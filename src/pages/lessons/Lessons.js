@@ -2,9 +2,7 @@ import "./Lessons.css";
 
 import partsOfGuitar from "./images/guitar.png";
 import guitarHead from "./images/guitar-head.png";
-import holding from "./images/holding.png";
-import leftHand from "./images/left-hand.png";
-import rightHand from "./images/right-hand.png";
+import pickHolding from "./images/pick-holding.png";
 
 import clock from "./images/clock.png";
 import lessonStar from "./images/lesson-star.png";
@@ -65,33 +63,15 @@ const lessons = [
         backgroundImage: backgroundHighlights[1],
         chords:[]
     },
- /*   {
+    {
         number: "03",
-        title: "Holding Your Guitar",
-        duration: "3:45",
-        code: "Y4fpsQrmw84",
-        image: holding,
+        title: "Picking your Pick",
+        duration: "4:30",
+        code: "OFjqAFMbL7w",
+        image: pickHolding,
         backgroundImage: backgroundHighlights[2],
         chords:[]
-    },
-    {
-        number: "04",
-        title: "Left Hand Basics",
-        duration: "6:10",
-        code: "Y4fpsQrmw84",
-        image: leftHand,
-        backgroundImage: backgroundHighlights[3],
-        chords:[]
-    },
-    {
-        number: "05",
-        title: "Right Hand Basics",
-        duration: "4:30",
-        code: "Y4fpsQrmw84",
-        image: rightHand,
-        backgroundImage: backgroundHighlights[4],
-        chords:[]
-    },
+    }, /*
     {
         number: "06",
         title: "First Chords: E, A, D",
